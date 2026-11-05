@@ -30,7 +30,7 @@ export function TodosPage() {
         <div className="user">
           <span>Signed in as {user!.name}</span>
           <button type="button" className="secondary" onClick={signOut}>
-            Sign out
+            Log out
           </button>
         </div>
       </header>

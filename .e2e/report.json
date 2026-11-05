@@ -1,7 +1,7 @@
 {
   "schemaVersion": "report-1",
   "run": {
-    "id": "01a1ac15-666b-7b63-a156-148c827e0a29",
+    "id": "01a1ac2f-2488-7053-8ff3-92b5e6c229a3",
     "specVersion": "0.1",
     "runner": {
       "name": "e2e",
@@ -9,8 +9,8 @@
     },
     "status": "passed",
     "exitCode": 0,
-    "startedAt": "2026-11-05T14:20:46.306Z",
-    "finishedAt": "2026-11-05T14:20:52.816Z",
+    "startedAt": "2026-11-05T14:48:53.393Z",
+    "finishedAt": "2026-11-05T14:49:18.936Z",
     "project": {
       "id": "e2e-playground",
       "configDigest": "cb7ecfb8285f0390e3fd9a369d29705fe960a96d72f4dd04124210c981833778"
@@ -23,9 +23,9 @@
       "runtime": "node v24.22.1"
     },
     "vcs": {
-      "commit": "57b933e1d0b303d729c102ba61183d5504c5d62e",
+      "commit": "508c695efbef97a0ea99bce70d45b39435df101d",
       "branch": "main",
-      "dirty": false
+      "dirty": true
     },
     "targets": [
       {
@@ -81,11 +81,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d",
+            "id": "01a1ac2f-2735-7004-99b9-ecdf4ffdb50c",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:46.913Z",
-            "durationMs": 391,
+            "startedAt": "2026-11-05T14:48:53.813Z",
+            "durationMs": 652,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -95,18 +95,18 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:0",
+                "id": "01a1ac2f-2735-7004-99b9-ecdf4ffdb50c:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/login",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:46.998Z",
-                "durationMs": 145,
+                "startedAt": "2026-11-05T14:48:54.015Z",
+                "durationMs": 278,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:47.119Z",
+                    "startedAt": "2026-11-05T14:48:54.248Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/login"
@@ -125,20 +125,20 @@
                 }
               },
               {
-                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:1",
+                "id": "01a1ac2f-2735-7004-99b9-ecdf4ffdb50c:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByRole(\"textbox\", name: \"Email\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.145Z",
-                "durationMs": 64,
+                "startedAt": "2026-11-05T14:48:54.294Z",
+                "durationMs": 72,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "fill",
-                    "startedAt": "2026-11-05T14:20:47.145Z",
-                    "durationMs": 64,
+                    "startedAt": "2026-11-05T14:48:54.294Z",
+                    "durationMs": 72,
                     "status": "passed",
                     "detail": "fill textbox \"Email\""
                   }
@@ -159,20 +159,20 @@
                 }
               },
               {
-                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:2",
+                "id": "01a1ac2f-2735-7004-99b9-ecdf4ffdb50c:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByLabel(\"<secret:demo.password>\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.209Z",
-                "durationMs": 29,
+                "startedAt": "2026-11-05T14:48:54.366Z",
+                "durationMs": 35,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "fill",
-                    "startedAt": "2026-11-05T14:20:47.210Z",
-                    "durationMs": 28,
+                    "startedAt": "2026-11-05T14:48:54.366Z",
+                    "durationMs": 35,
                     "status": "passed",
                     "detail": "fill textbox \"<secret:demo.password>\""
                   }
@@ -191,32 +191,32 @@
                 }
               },
               {
-                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:3",
+                "id": "01a1ac2f-2735-7004-99b9-ecdf4ffdb50c:3",
                 "index": 3,
                 "kind": "locator",
                 "api": "locator.tap",
                 "label": "getByRole(\"button\", name: \"Sign in\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.238Z",
-                "durationMs": 46,
+                "startedAt": "2026-11-05T14:48:54.401Z",
+                "durationMs": 42,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:47.273Z",
+                    "startedAt": "2026-11-05T14:48:54.426Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
                   },
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:47.276Z",
+                    "startedAt": "2026-11-05T14:48:54.431Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
                   },
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:47.276Z",
+                    "startedAt": "2026-11-05T14:48:54.431Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
@@ -224,8 +224,8 @@
                   {
                     "kind": "engine",
                     "name": "tap",
-                    "startedAt": "2026-11-05T14:20:47.238Z",
-                    "durationMs": 46,
+                    "startedAt": "2026-11-05T14:48:54.401Z",
+                    "durationMs": 42,
                     "status": "passed",
                     "detail": "tap button \"Sign in\""
                   }
@@ -233,18 +233,23 @@
                 "artifacts": [],
                 "screen": {
                   "location": "http://localhost:3000/todos",
-                  "nodes": 1,
+                  "nodes": 14,
                   "since": 2,
                   "changes": [
-                    "removed main",
-                    "removed heading \"Sign in\"",
-                    "removed text=\"Email\"",
-                    "removed textbox \"Email\" value=\"demo@example.test\" purpose=username",
-                    "removed text=\"<secret:demo.password>\"",
-                    "removed textbox \"<secret:demo.password>\" value=<secure> purpose=password [secure]",
-                    "removed button \"Sign in\"",
-                    "removed text=\"Demo account: demo@example.test / <secret:demo.password>\""
-                  ]
+                    "added heading \"Todos\"",
+                    "added text=\"Signed in as Demo User\"",
+                    "added button \"Log out\"",
+                    "added text=\"New todo\"",
+                    "added textbox \"New todo\"",
+                    "added button \"Add\"",
+                    "added navigation \"Filter todos\"",
+                    "added button \"All\" [pressed]",
+                    "added button \"Active\"",
+                    "added button \"Completed\"",
+                    "added text=\"No todos to show.\"",
+                    "added status \"0 remaining\""
+                  ],
+                  "more": 7
                 },
                 "source": {
                   "file": "tests/auth.setup.e2e.ts",
@@ -253,14 +258,14 @@
                 }
               },
               {
-                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:4",
+                "id": "01a1ac2f-2735-7004-99b9-ecdf4ffdb50c:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toHaveURL",
                 "label": "/todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.285Z",
-                "durationMs": 1,
+                "startedAt": "2026-11-05T14:48:54.444Z",
+                "durationMs": 0,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -270,19 +275,19 @@
                 }
               },
               {
-                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:5",
+                "id": "01a1ac2f-2735-7004-99b9-ecdf4ffdb50c:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(\"Signed in as Demo User\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.286Z",
+                "startedAt": "2026-11-05T14:48:54.444Z",
                 "durationMs": 4,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:47.286Z",
+                    "startedAt": "2026-11-05T14:48:54.444Z",
                     "durationMs": 4,
                     "status": "passed",
                     "count": 1
@@ -296,14 +301,14 @@
                 }
               },
               {
-                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:6",
+                "id": "01a1ac2f-2735-7004-99b9-ecdf4ffdb50c:6",
                 "index": 6,
                 "kind": "session",
                 "api": "session.save",
                 "label": "demo",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.290Z",
-                "durationMs": 4,
+                "startedAt": "2026-11-05T14:48:54.448Z",
+                "durationMs": 8,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -318,7 +323,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:47.107Z",
+                "at": "2026-11-05T14:48:54.233Z",
                 "step": 0
               }
             ]
@@ -348,11 +353,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-6d45-7576-a2e6-571a4dc4e761",
+            "id": "01a1ac2f-2bdc-7ac1-a341-caf9357d7989",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:47.813Z",
-            "durationMs": 295,
+            "startedAt": "2026-11-05T14:48:55.004Z",
+            "durationMs": 324,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -362,32 +367,32 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-6d45-7576-a2e6-571a4dc4e761:0",
+                "id": "01a1ac2f-2bdc-7ac1-a341-caf9357d7989:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.906Z",
-                "durationMs": 172,
+                "startedAt": "2026-11-05T14:48:55.106Z",
+                "durationMs": 190,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:48.053Z",
+                    "startedAt": "2026-11-05T14:48:55.265Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/"
                   },
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:48.055Z",
+                    "startedAt": "2026-11-05T14:48:55.270Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/login"
                   },
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:48.056Z",
+                    "startedAt": "2026-11-05T14:48:55.272Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/login"
@@ -406,20 +411,20 @@
                 }
               },
               {
-                "id": "01a1ac15-6d45-7576-a2e6-571a4dc4e761:1",
+                "id": "01a1ac2f-2bdc-7ac1-a341-caf9357d7989:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "locator(\"body\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.080Z",
-                "durationMs": 22,
+                "startedAt": "2026-11-05T14:48:55.298Z",
+                "durationMs": 24,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:48.080Z",
-                    "durationMs": 22,
+                    "startedAt": "2026-11-05T14:48:55.298Z",
+                    "durationMs": 24,
                     "status": "passed",
                     "count": 1
                   }
@@ -437,7 +442,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:48.037Z",
+                "at": "2026-11-05T14:48:55.252Z",
                 "step": 0
               }
             ]
@@ -470,11 +475,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-6d41-7548-8d85-c56ca861549f",
+            "id": "01a1ac2f-2bdd-74fe-85a7-d1887d3c287f",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:47.810Z",
-            "durationMs": 420,
+            "startedAt": "2026-11-05T14:48:55.005Z",
+            "durationMs": 465,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -484,18 +489,18 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:0",
+                "id": "01a1ac2f-2bdd-74fe-85a7-d1887d3c287f:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/login",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.905Z",
-                "durationMs": 176,
+                "startedAt": "2026-11-05T14:48:55.109Z",
+                "durationMs": 191,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:48.058Z",
+                    "startedAt": "2026-11-05T14:48:55.278Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/login"
@@ -514,20 +519,20 @@
                 }
               },
               {
-                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:1",
+                "id": "01a1ac2f-2bdd-74fe-85a7-d1887d3c287f:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByRole(\"textbox\", name: \"Email\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.083Z",
-                "durationMs": 68,
+                "startedAt": "2026-11-05T14:48:55.302Z",
+                "durationMs": 70,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "fill",
-                    "startedAt": "2026-11-05T14:20:48.083Z",
-                    "durationMs": 68,
+                    "startedAt": "2026-11-05T14:48:55.302Z",
+                    "durationMs": 69,
                     "status": "passed",
                     "detail": "fill textbox \"Email\""
                   }
@@ -548,20 +553,20 @@
                 }
               },
               {
-                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:2",
+                "id": "01a1ac2f-2bdd-74fe-85a7-d1887d3c287f:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByLabel(\"<secret:demo.password>\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.151Z",
-                "durationMs": 32,
+                "startedAt": "2026-11-05T14:48:55.372Z",
+                "durationMs": 34,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "fill",
-                    "startedAt": "2026-11-05T14:20:48.151Z",
-                    "durationMs": 32,
+                    "startedAt": "2026-11-05T14:48:55.372Z",
+                    "durationMs": 34,
                     "status": "passed",
                     "detail": "fill textbox \"<secret:demo.password>\""
                   }
@@ -580,20 +585,20 @@
                 }
               },
               {
-                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:3",
+                "id": "01a1ac2f-2bdd-74fe-85a7-d1887d3c287f:3",
                 "index": 3,
                 "kind": "locator",
                 "api": "locator.tap",
                 "label": "getByRole(\"button\", name: \"Sign in\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.183Z",
-                "durationMs": 35,
+                "startedAt": "2026-11-05T14:48:55.406Z",
+                "durationMs": 51,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "tap",
-                    "startedAt": "2026-11-05T14:20:48.183Z",
-                    "durationMs": 35,
+                    "startedAt": "2026-11-05T14:48:55.406Z",
+                    "durationMs": 51,
                     "status": "passed",
                     "detail": "tap button \"Sign in\""
                   }
@@ -614,19 +619,19 @@
                 }
               },
               {
-                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:4",
+                "id": "01a1ac2f-2bdd-74fe-85a7-d1887d3c287f:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toContainText",
                 "label": "getByRole(\"alert\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.218Z",
+                "startedAt": "2026-11-05T14:48:55.457Z",
                 "durationMs": 4,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:48.218Z",
+                    "startedAt": "2026-11-05T14:48:55.458Z",
                     "durationMs": 4,
                     "status": "passed",
                     "count": 1
@@ -640,14 +645,14 @@
                 }
               },
               {
-                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:5",
+                "id": "01a1ac2f-2bdd-74fe-85a7-d1887d3c287f:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toHaveURL",
                 "label": "/login",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.222Z",
-                "durationMs": 0,
+                "startedAt": "2026-11-05T14:48:55.462Z",
+                "durationMs": 1,
                 "events": [],
                 "artifacts": [],
                 "source": {
@@ -662,7 +667,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:48.042Z",
+                "at": "2026-11-05T14:48:55.260Z",
                 "step": 0
               }
             ]
@@ -695,11 +700,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-6ee7-7660-9ef3-7a5ff6e34037",
+            "id": "01a1ac2f-2dae-71de-9973-65bb6c5d315e",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:48.231Z",
-            "durationMs": 149,
+            "startedAt": "2026-11-05T14:48:55.471Z",
+            "durationMs": 150,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -709,32 +714,32 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-6ee7-7660-9ef3-7a5ff6e34037:0",
+                "id": "01a1ac2f-2dae-71de-9973-65bb6c5d315e:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.235Z",
-                "durationMs": 123,
+                "startedAt": "2026-11-05T14:48:55.475Z",
+                "durationMs": 124,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:48.329Z",
+                    "startedAt": "2026-11-05T14:48:55.569Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
                   },
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:48.336Z",
+                    "startedAt": "2026-11-05T14:48:55.576Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/login"
                   },
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:48.337Z",
+                    "startedAt": "2026-11-05T14:48:55.577Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/login"
@@ -753,13 +758,13 @@
                 }
               },
               {
-                "id": "01a1ac15-6ee7-7660-9ef3-7a5ff6e34037:1",
+                "id": "01a1ac2f-2dae-71de-9973-65bb6c5d315e:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toHaveURL",
                 "label": "/login",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.358Z",
+                "startedAt": "2026-11-05T14:48:55.600Z",
                 "durationMs": 0,
                 "events": [],
                 "artifacts": [],
@@ -770,19 +775,19 @@
                 }
               },
               {
-                "id": "01a1ac15-6ee7-7660-9ef3-7a5ff6e34037:2",
+                "id": "01a1ac2f-2dae-71de-9973-65bb6c5d315e:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: \"Sign in\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.359Z",
+                "startedAt": "2026-11-05T14:48:55.600Z",
                 "durationMs": 19,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:48.359Z",
+                    "startedAt": "2026-11-05T14:48:55.600Z",
                     "durationMs": 19,
                     "status": "passed",
                     "count": 1
@@ -801,7 +806,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:48.320Z",
+                "at": "2026-11-05T14:48:55.561Z",
                 "step": 0
               }
             ]
@@ -834,11 +839,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-6b4e-7940-9459-3019508be066",
+            "id": "01a1ac2f-29c7-77ec-ba23-c6dec053fcc2",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:47.310Z",
-            "durationMs": 1473,
+            "startedAt": "2026-11-05T14:48:54.471Z",
+            "durationMs": 1525,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -848,18 +853,18 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-6b4e-7940-9459-3019508be066:0",
+                "id": "01a1ac2f-29c7-77ec-ba23-c6dec053fcc2:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.364Z",
-                "durationMs": 136,
+                "startedAt": "2026-11-05T14:48:54.542Z",
+                "durationMs": 140,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:47.473Z",
+                    "startedAt": "2026-11-05T14:48:54.651Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
@@ -879,53 +884,53 @@
                 }
               },
               {
-                "id": "01a1ac15-6b4e-7940-9459-3019508be066:1",
+                "id": "01a1ac2f-29c7-77ec-ba23-c6dec053fcc2:1",
                 "index": 1,
                 "kind": "agent",
                 "api": "agent.act",
                 "label": "add a todo named {title}",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.501Z",
-                "durationMs": 209,
+                "startedAt": "2026-11-05T14:48:54.683Z",
+                "durationMs": 233,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:47.506Z",
-                    "durationMs": 107,
+                    "startedAt": "2026-11-05T14:48:54.687Z",
+                    "durationMs": 114,
                     "status": "passed",
-                    "bytes": 370,
+                    "bytes": 369,
                     "count": 14
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-05T14:20:47.614Z",
-                    "durationMs": 37,
+                    "startedAt": "2026-11-05T14:48:54.803Z",
+                    "durationMs": 38,
                     "status": "passed",
                     "name": "type",
                     "detail": "type \"Buy milk\" into textbox \"New todo\""
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:47.652Z",
+                    "startedAt": "2026-11-05T14:48:54.842Z",
                     "durationMs": 13,
                     "status": "passed",
-                    "bytes": 397,
+                    "bytes": 396,
                     "count": 14
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-05T14:20:47.665Z",
-                    "durationMs": 30,
+                    "startedAt": "2026-11-05T14:48:54.855Z",
+                    "durationMs": 36,
                     "status": "passed",
                     "name": "tap",
                     "detail": "tap button \"Add\""
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:47.695Z",
-                    "durationMs": 14,
+                    "startedAt": "2026-11-05T14:48:54.891Z",
+                    "durationMs": 20,
                     "status": "passed",
-                    "bytes": 533,
+                    "bytes": 532,
                     "count": 18
                   }
                 ],
@@ -934,7 +939,7 @@
                 "metrics": {
                   "modelCalls": 0,
                   "actionSteps": 2,
-                  "observationBytes": 533,
+                  "observationBytes": 532,
                   "contextBytes": 0,
                   "ledgerBytes": 0
                 },
@@ -968,20 +973,20 @@
                 }
               },
               {
-                "id": "01a1ac15-6b4e-7940-9459-3019508be066:2",
+                "id": "01a1ac2f-29c7-77ec-ba23-c6dec053fcc2:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.not.toBeChecked",
                 "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:47.711Z",
-                "durationMs": 1052,
+                "startedAt": "2026-11-05T14:48:54.916Z",
+                "durationMs": 1058,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:47.711Z",
-                    "durationMs": 1052,
+                    "startedAt": "2026-11-05T14:48:54.917Z",
+                    "durationMs": 1058,
                     "status": "passed",
                     "count": 11
                   }
@@ -994,20 +999,20 @@
                 }
               },
               {
-                "id": "01a1ac15-6b4e-7940-9459-3019508be066:3",
+                "id": "01a1ac2f-29c7-77ec-ba23-c6dec053fcc2:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toHaveCount",
                 "label": "getByRole(\"listitem\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.763Z",
-                "durationMs": 4,
+                "startedAt": "2026-11-05T14:48:55.976Z",
+                "durationMs": 6,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:48.764Z",
-                    "durationMs": 4,
+                    "startedAt": "2026-11-05T14:48:55.977Z",
+                    "durationMs": 5,
                     "status": "passed",
                     "count": 1
                   }
@@ -1020,19 +1025,19 @@
                 }
               },
               {
-                "id": "01a1ac15-6b4e-7940-9459-3019508be066:4",
+                "id": "01a1ac2f-29c7-77ec-ba23-c6dec053fcc2:4",
                 "index": 4,
                 "kind": "assertion",
                 "api": "expect.toHaveText",
                 "label": "getByRole(\"status\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.768Z",
+                "startedAt": "2026-11-05T14:48:55.982Z",
                 "durationMs": 5,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:48.769Z",
+                    "startedAt": "2026-11-05T14:48:55.982Z",
                     "durationMs": 4,
                     "status": "passed",
                     "count": 1
@@ -1051,7 +1056,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:47.461Z",
+                "at": "2026-11-05T14:48:54.644Z",
                 "step": 0
               }
             ]
@@ -1084,11 +1089,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a",
+            "id": "01a1ac2f-2fbe-7c4f-85a1-f12ab18b41f8",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:48.785Z",
-            "durationMs": 461,
+            "startedAt": "2026-11-05T14:48:55.998Z",
+            "durationMs": 464,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -1098,18 +1103,18 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:0",
+                "id": "01a1ac2f-2fbe-7c4f-85a1-f12ab18b41f8:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.848Z",
-                "durationMs": 122,
+                "startedAt": "2026-11-05T14:48:56.062Z",
+                "durationMs": 120,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:48.942Z",
+                    "startedAt": "2026-11-05T14:48:56.157Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
@@ -1129,20 +1134,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:1",
+                "id": "01a1ac2f-2fbe-7c4f-85a1-f12ab18b41f8:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByRole(\"textbox\", name: \"New todo\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:48.971Z",
-                "durationMs": 54,
+                "startedAt": "2026-11-05T14:48:56.182Z",
+                "durationMs": 52,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "fill",
-                    "startedAt": "2026-11-05T14:20:48.971Z",
-                    "durationMs": 54,
+                    "startedAt": "2026-11-05T14:48:56.183Z",
+                    "durationMs": 52,
                     "status": "passed",
                     "detail": "fill textbox \"New todo\""
                   }
@@ -1163,20 +1168,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:2",
+                "id": "01a1ac2f-2fbe-7c4f-85a1-f12ab18b41f8:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.tap",
                 "label": "getByRole(\"button\", name: \"Add\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.025Z",
-                "durationMs": 49,
+                "startedAt": "2026-11-05T14:48:56.235Z",
+                "durationMs": 52,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "tap",
-                    "startedAt": "2026-11-05T14:20:49.025Z",
-                    "durationMs": 49,
+                    "startedAt": "2026-11-05T14:48:56.235Z",
+                    "durationMs": 52,
                     "status": "passed",
                     "detail": "tap button \"Add\""
                   }
@@ -1204,20 +1209,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:3",
+                "id": "01a1ac2f-2fbe-7c4f-85a1-f12ab18b41f8:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.074Z",
-                "durationMs": 5,
+                "startedAt": "2026-11-05T14:48:56.287Z",
+                "durationMs": 6,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:49.074Z",
-                    "durationMs": 5,
+                    "startedAt": "2026-11-05T14:48:56.287Z",
+                    "durationMs": 6,
                     "status": "passed",
                     "count": 1
                   }
@@ -1230,37 +1235,37 @@
                 }
               },
               {
-                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:4",
+                "id": "01a1ac2f-2fbe-7c4f-85a1-f12ab18b41f8:4",
                 "index": 4,
                 "kind": "agent",
                 "api": "agent.act",
                 "label": "mark the todo {title} as done",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.079Z",
-                "durationMs": 154,
+                "startedAt": "2026-11-05T14:48:56.293Z",
+                "durationMs": 155,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:49.080Z",
+                    "startedAt": "2026-11-05T14:48:56.295Z",
                     "durationMs": 100,
                     "status": "passed",
-                    "bytes": 528,
+                    "bytes": 527,
                     "count": 18
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-05T14:20:49.181Z",
-                    "durationMs": 39,
+                    "startedAt": "2026-11-05T14:48:56.395Z",
+                    "durationMs": 41,
                     "status": "passed",
                     "name": "check",
                     "detail": "check checkbox \"Buy milk\""
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:49.220Z",
+                    "startedAt": "2026-11-05T14:48:56.436Z",
                     "durationMs": 12,
                     "status": "passed",
-                    "bytes": 571,
+                    "bytes": 570,
                     "count": 19
                   }
                 ],
@@ -1269,7 +1274,7 @@
                 "metrics": {
                   "modelCalls": 0,
                   "actionSteps": 1,
-                  "observationBytes": 571,
+                  "observationBytes": 570,
                   "contextBytes": 0,
                   "ledgerBytes": 0
                 },
@@ -1299,19 +1304,19 @@
                 }
               },
               {
-                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:5",
+                "id": "01a1ac2f-2fbe-7c4f-85a1-f12ab18b41f8:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeChecked",
                 "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.233Z",
+                "startedAt": "2026-11-05T14:48:56.448Z",
                 "durationMs": 4,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:49.233Z",
+                    "startedAt": "2026-11-05T14:48:56.448Z",
                     "durationMs": 4,
                     "status": "passed",
                     "count": 1
@@ -1325,19 +1330,19 @@
                 }
               },
               {
-                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:6",
+                "id": "01a1ac2f-2fbe-7c4f-85a1-f12ab18b41f8:6",
                 "index": 6,
                 "kind": "assertion",
                 "api": "expect.toHaveText",
                 "label": "getByRole(\"status\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.237Z",
+                "startedAt": "2026-11-05T14:48:56.452Z",
                 "durationMs": 2,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:49.237Z",
+                    "startedAt": "2026-11-05T14:48:56.452Z",
                     "durationMs": 2,
                     "status": "passed",
                     "count": 1
@@ -1351,19 +1356,19 @@
                 }
               },
               {
-                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:7",
+                "id": "01a1ac2f-2fbe-7c4f-85a1-f12ab18b41f8:7",
                 "index": 7,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: \"Clear completed\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.239Z",
+                "startedAt": "2026-11-05T14:48:56.454Z",
                 "durationMs": 2,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:49.239Z",
+                    "startedAt": "2026-11-05T14:48:56.454Z",
                     "durationMs": 2,
                     "status": "passed",
                     "count": 1
@@ -1382,7 +1387,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:48.933Z",
+                "at": "2026-11-05T14:48:56.148Z",
                 "step": 0
               }
             ]
@@ -1415,11 +1420,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-72df-7dda-adc4-ad1794f06869",
+            "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:49.247Z",
-            "durationMs": 1808,
+            "startedAt": "2026-11-05T14:48:56.462Z",
+            "durationMs": 1806,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -1429,18 +1434,18 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:0",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.296Z",
-                "durationMs": 120,
+                "startedAt": "2026-11-05T14:48:56.509Z",
+                "durationMs": 123,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:49.390Z",
+                    "startedAt": "2026-11-05T14:48:56.608Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
@@ -1460,19 +1465,19 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:1",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByRole(\"textbox\", name: \"New todo\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.416Z",
+                "startedAt": "2026-11-05T14:48:56.634Z",
                 "durationMs": 53,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "fill",
-                    "startedAt": "2026-11-05T14:20:49.416Z",
+                    "startedAt": "2026-11-05T14:48:56.634Z",
                     "durationMs": 53,
                     "status": "passed",
                     "detail": "fill textbox \"New todo\""
@@ -1494,20 +1499,20 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:2",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.tap",
                 "label": "getByRole(\"button\", name: \"Add\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.469Z",
-                "durationMs": 51,
+                "startedAt": "2026-11-05T14:48:56.687Z",
+                "durationMs": 49,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "tap",
-                    "startedAt": "2026-11-05T14:20:49.469Z",
-                    "durationMs": 51,
+                    "startedAt": "2026-11-05T14:48:56.687Z",
+                    "durationMs": 49,
                     "status": "passed",
                     "detail": "tap button \"Add\""
                   }
@@ -1535,20 +1540,20 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:3",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.520Z",
-                "durationMs": 6,
+                "startedAt": "2026-11-05T14:48:56.736Z",
+                "durationMs": 5,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:49.520Z",
-                    "durationMs": 6,
+                    "startedAt": "2026-11-05T14:48:56.737Z",
+                    "durationMs": 5,
                     "status": "passed",
                     "count": 1
                   }
@@ -1561,19 +1566,19 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:4",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:4",
                 "index": 4,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByRole(\"textbox\", name: \"New todo\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.526Z",
+                "startedAt": "2026-11-05T14:48:56.742Z",
                 "durationMs": 16,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "fill",
-                    "startedAt": "2026-11-05T14:20:49.527Z",
+                    "startedAt": "2026-11-05T14:48:56.742Z",
                     "durationMs": 16,
                     "status": "passed",
                     "detail": "fill textbox \"New todo\""
@@ -1595,20 +1600,20 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:5",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:5",
                 "index": 5,
                 "kind": "locator",
                 "api": "locator.tap",
                 "label": "getByRole(\"button\", name: \"Add\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.543Z",
-                "durationMs": 42,
+                "startedAt": "2026-11-05T14:48:56.758Z",
+                "durationMs": 44,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "tap",
-                    "startedAt": "2026-11-05T14:20:49.543Z",
-                    "durationMs": 42,
+                    "startedAt": "2026-11-05T14:48:56.758Z",
+                    "durationMs": 43,
                     "status": "passed",
                     "detail": "tap button \"Add\""
                   }
@@ -1634,20 +1639,20 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:6",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:6",
                 "index": 6,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"checkbox\", name: \"Walk the dog\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.585Z",
-                "durationMs": 5,
+                "startedAt": "2026-11-05T14:48:56.802Z",
+                "durationMs": 4,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:49.585Z",
-                    "durationMs": 5,
+                    "startedAt": "2026-11-05T14:48:56.802Z",
+                    "durationMs": 4,
                     "status": "passed",
                     "count": 1
                   }
@@ -1660,20 +1665,20 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:7",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:7",
                 "index": 7,
                 "kind": "locator",
                 "api": "locator.check",
                 "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.590Z",
-                "durationMs": 47,
+                "startedAt": "2026-11-05T14:48:56.806Z",
+                "durationMs": 46,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "check",
-                    "startedAt": "2026-11-05T14:20:49.590Z",
-                    "durationMs": 47,
+                    "startedAt": "2026-11-05T14:48:56.806Z",
+                    "durationMs": 46,
                     "status": "passed",
                     "detail": "check checkbox \"Buy milk\""
                   }
@@ -1696,37 +1701,37 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:8",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:8",
                 "index": 8,
                 "kind": "agent",
                 "api": "agent.act",
                 "label": "show only the active todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.637Z",
+                "startedAt": "2026-11-05T14:48:56.852Z",
                 "durationMs": 144,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:49.641Z",
-                    "durationMs": 101,
+                    "startedAt": "2026-11-05T14:48:56.855Z",
+                    "durationMs": 99,
                     "status": "passed",
-                    "bytes": 749,
+                    "bytes": 748,
                     "count": 23
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-05T14:20:49.742Z",
-                    "durationMs": 25,
+                    "startedAt": "2026-11-05T14:48:56.955Z",
+                    "durationMs": 28,
                     "status": "passed",
                     "name": "tap",
                     "detail": "tap button \"Active\""
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:49.767Z",
-                    "durationMs": 13,
+                    "startedAt": "2026-11-05T14:48:56.983Z",
+                    "durationMs": 12,
                     "status": "passed",
-                    "bytes": 585,
+                    "bytes": 584,
                     "count": 19
                   }
                 ],
@@ -1735,7 +1740,7 @@
                 "metrics": {
                   "modelCalls": 0,
                   "actionSteps": 1,
-                  "observationBytes": 749,
+                  "observationBytes": 748,
                   "contextBytes": 0,
                   "ledgerBytes": 0
                 },
@@ -1768,19 +1773,19 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:9",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:9",
                 "index": 9,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: \"Active\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.781Z",
+                "startedAt": "2026-11-05T14:48:56.996Z",
                 "durationMs": 4,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:49.781Z",
+                    "startedAt": "2026-11-05T14:48:56.996Z",
                     "durationMs": 4,
                     "status": "passed",
                     "count": 1
@@ -1794,20 +1799,20 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:10",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:10",
                 "index": 10,
                 "kind": "assertion",
                 "api": "expect.toHaveCount",
                 "label": "getByRole(\"checkbox\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.785Z",
-                "durationMs": 1,
+                "startedAt": "2026-11-05T14:48:57.000Z",
+                "durationMs": 2,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:49.785Z",
-                    "durationMs": 1,
+                    "startedAt": "2026-11-05T14:48:57.000Z",
+                    "durationMs": 2,
                     "status": "passed",
                     "count": 1
                   }
@@ -1820,20 +1825,20 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:11",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:11",
                 "index": 11,
                 "kind": "assertion",
                 "api": "expect.not.toBeChecked",
                 "label": "getByRole(\"checkbox\", name: \"Walk the dog\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:49.787Z",
-                "durationMs": 1070,
+                "startedAt": "2026-11-05T14:48:57.002Z",
+                "durationMs": 1075,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:49.787Z",
-                    "durationMs": 1070,
+                    "startedAt": "2026-11-05T14:48:57.002Z",
+                    "durationMs": 1075,
                     "status": "passed",
                     "count": 11
                   }
@@ -1846,37 +1851,37 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:12",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:12",
                 "index": 12,
                 "kind": "agent",
                 "api": "agent.act",
                 "label": "show only the completed todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:50.857Z",
-                "durationMs": 182,
+                "startedAt": "2026-11-05T14:48:58.077Z",
+                "durationMs": 177,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:50.860Z",
-                    "durationMs": 123,
+                    "startedAt": "2026-11-05T14:48:58.080Z",
+                    "durationMs": 122,
                     "status": "passed",
-                    "bytes": 585,
+                    "bytes": 584,
                     "count": 19
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-05T14:20:50.984Z",
-                    "durationMs": 41,
+                    "startedAt": "2026-11-05T14:48:58.202Z",
+                    "durationMs": 38,
                     "status": "passed",
                     "name": "tap",
                     "detail": "tap button \"Completed\""
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:51.025Z",
-                    "durationMs": 15,
+                    "startedAt": "2026-11-05T14:48:58.240Z",
+                    "durationMs": 14,
                     "status": "passed",
-                    "bytes": 575,
+                    "bytes": 574,
                     "count": 19
                   }
                 ],
@@ -1885,7 +1890,7 @@
                 "metrics": {
                   "modelCalls": 0,
                   "actionSteps": 1,
-                  "observationBytes": 585,
+                  "observationBytes": 584,
                   "contextBytes": 0,
                   "ledgerBytes": 0
                 },
@@ -1922,20 +1927,20 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:13",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:13",
                 "index": 13,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"button\", name: \"Completed\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.041Z",
-                "durationMs": 6,
+                "startedAt": "2026-11-05T14:48:58.255Z",
+                "durationMs": 4,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:51.041Z",
-                    "durationMs": 6,
+                    "startedAt": "2026-11-05T14:48:58.255Z",
+                    "durationMs": 4,
                     "status": "passed",
                     "count": 1
                   }
@@ -1948,20 +1953,20 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:14",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:14",
                 "index": 14,
                 "kind": "assertion",
                 "api": "expect.toHaveCount",
                 "label": "getByRole(\"checkbox\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.047Z",
-                "durationMs": 1,
+                "startedAt": "2026-11-05T14:48:58.259Z",
+                "durationMs": 2,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:51.047Z",
-                    "durationMs": 1,
+                    "startedAt": "2026-11-05T14:48:58.259Z",
+                    "durationMs": 2,
                     "status": "passed",
                     "count": 1
                   }
@@ -1974,19 +1979,19 @@
                 }
               },
               {
-                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:15",
+                "id": "01a1ac2f-318e-7ee4-8903-8d50165e6f62:15",
                 "index": 15,
                 "kind": "assertion",
                 "api": "expect.toBeChecked",
                 "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.048Z",
+                "startedAt": "2026-11-05T14:48:58.261Z",
                 "durationMs": 2,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:51.048Z",
+                    "startedAt": "2026-11-05T14:48:58.261Z",
                     "durationMs": 2,
                     "status": "passed",
                     "count": 1
@@ -2005,7 +2010,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:49.381Z",
+                "at": "2026-11-05T14:48:56.599Z",
                 "step": 0
               }
             ]
@@ -2038,11 +2043,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-79f0-7768-911e-bd197267ad4a",
+            "id": "01a1ac2f-389d-746c-9dbd-ed397c67b476",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:51.056Z",
-            "durationMs": 423,
+            "startedAt": "2026-11-05T14:48:58.269Z",
+            "durationMs": 424,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -2052,18 +2057,18 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:0",
+                "id": "01a1ac2f-389d-746c-9dbd-ed397c67b476:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.104Z",
-                "durationMs": 118,
+                "startedAt": "2026-11-05T14:48:58.318Z",
+                "durationMs": 121,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:51.197Z",
+                    "startedAt": "2026-11-05T14:48:58.413Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
@@ -2083,20 +2088,20 @@
                 }
               },
               {
-                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:1",
+                "id": "01a1ac2f-389d-746c-9dbd-ed397c67b476:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByRole(\"textbox\", name: \"New todo\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.223Z",
-                "durationMs": 51,
+                "startedAt": "2026-11-05T14:48:58.439Z",
+                "durationMs": 52,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "fill",
-                    "startedAt": "2026-11-05T14:20:51.223Z",
-                    "durationMs": 51,
+                    "startedAt": "2026-11-05T14:48:58.440Z",
+                    "durationMs": 52,
                     "status": "passed",
                     "detail": "fill textbox \"New todo\""
                   }
@@ -2117,20 +2122,20 @@
                 }
               },
               {
-                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:2",
+                "id": "01a1ac2f-389d-746c-9dbd-ed397c67b476:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.tap",
                 "label": "getByRole(\"button\", name: \"Add\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.274Z",
-                "durationMs": 54,
+                "startedAt": "2026-11-05T14:48:58.492Z",
+                "durationMs": 49,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "tap",
-                    "startedAt": "2026-11-05T14:20:51.275Z",
-                    "durationMs": 54,
+                    "startedAt": "2026-11-05T14:48:58.492Z",
+                    "durationMs": 49,
                     "status": "passed",
                     "detail": "tap button \"Add\""
                   }
@@ -2158,20 +2163,20 @@
                 }
               },
               {
-                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:3",
+                "id": "01a1ac2f-389d-746c-9dbd-ed397c67b476:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.329Z",
-                "durationMs": 8,
+                "startedAt": "2026-11-05T14:48:58.541Z",
+                "durationMs": 6,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:51.329Z",
-                    "durationMs": 8,
+                    "startedAt": "2026-11-05T14:48:58.542Z",
+                    "durationMs": 6,
                     "status": "passed",
                     "count": 1
                   }
@@ -2184,26 +2189,26 @@
                 }
               },
               {
-                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:4",
+                "id": "01a1ac2f-389d-746c-9dbd-ed397c67b476:4",
                 "index": 4,
                 "kind": "agent",
                 "api": "agent.act",
                 "label": "delete the todo {title}",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.337Z",
-                "durationMs": 132,
+                "startedAt": "2026-11-05T14:48:58.548Z",
+                "durationMs": 135,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:51.338Z",
-                    "durationMs": 97,
+                    "startedAt": "2026-11-05T14:48:58.549Z",
+                    "durationMs": 100,
                     "status": "passed",
-                    "bytes": 528,
+                    "bytes": 527,
                     "count": 18
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-05T14:20:51.436Z",
+                    "startedAt": "2026-11-05T14:48:58.649Z",
                     "durationMs": 21,
                     "status": "passed",
                     "name": "tap",
@@ -2211,10 +2216,10 @@
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:51.457Z",
+                    "startedAt": "2026-11-05T14:48:58.671Z",
                     "durationMs": 11,
                     "status": "passed",
-                    "bytes": 373,
+                    "bytes": 372,
                     "count": 14
                   }
                 ],
@@ -2223,7 +2228,7 @@
                 "metrics": {
                   "modelCalls": 0,
                   "actionSteps": 1,
-                  "observationBytes": 528,
+                  "observationBytes": 527,
                   "contextBytes": 0,
                   "ledgerBytes": 0
                 },
@@ -2257,20 +2262,20 @@
                 }
               },
               {
-                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:5",
+                "id": "01a1ac2f-389d-746c-9dbd-ed397c67b476:5",
                 "index": 5,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(\"No todos to show.\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.469Z",
-                "durationMs": 4,
+                "startedAt": "2026-11-05T14:48:58.683Z",
+                "durationMs": 3,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:51.469Z",
-                    "durationMs": 4,
+                    "startedAt": "2026-11-05T14:48:58.683Z",
+                    "durationMs": 3,
                     "status": "passed",
                     "count": 1
                   }
@@ -2283,19 +2288,19 @@
                 }
               },
               {
-                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:6",
+                "id": "01a1ac2f-389d-746c-9dbd-ed397c67b476:6",
                 "index": 6,
                 "kind": "assertion",
                 "api": "expect.toHaveText",
                 "label": "getByRole(\"status\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.473Z",
+                "startedAt": "2026-11-05T14:48:58.686Z",
                 "durationMs": 1,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:51.473Z",
+                    "startedAt": "2026-11-05T14:48:58.687Z",
                     "durationMs": 1,
                     "status": "passed",
                     "count": 1
@@ -2314,7 +2319,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:51.189Z",
+                "at": "2026-11-05T14:48:58.405Z",
                 "step": 0
               }
             ]
@@ -2347,11 +2352,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-7b98-710d-a177-943e8885d6fe",
+            "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:51.480Z",
-            "durationMs": 557,
+            "startedAt": "2026-11-05T14:48:58.694Z",
+            "durationMs": 547,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -2361,18 +2366,18 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:0",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.541Z",
-                "durationMs": 118,
+                "startedAt": "2026-11-05T14:48:58.746Z",
+                "durationMs": 117,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:51.633Z",
+                    "startedAt": "2026-11-05T14:48:58.838Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
@@ -2392,20 +2397,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:1",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByRole(\"textbox\", name: \"New todo\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.660Z",
-                "durationMs": 50,
+                "startedAt": "2026-11-05T14:48:58.864Z",
+                "durationMs": 52,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "fill",
-                    "startedAt": "2026-11-05T14:20:51.661Z",
-                    "durationMs": 50,
+                    "startedAt": "2026-11-05T14:48:58.864Z",
+                    "durationMs": 52,
                     "status": "passed",
                     "detail": "fill textbox \"New todo\""
                   }
@@ -2426,19 +2431,19 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:2",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:2",
                 "index": 2,
                 "kind": "locator",
                 "api": "locator.tap",
                 "label": "getByRole(\"button\", name: \"Add\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.711Z",
-                "durationMs": 53,
+                "startedAt": "2026-11-05T14:48:58.916Z",
+                "durationMs": 54,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "tap",
-                    "startedAt": "2026-11-05T14:20:51.711Z",
+                    "startedAt": "2026-11-05T14:48:58.916Z",
                     "durationMs": 53,
                     "status": "passed",
                     "detail": "tap button \"Add\""
@@ -2467,20 +2472,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:3",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.764Z",
-                "durationMs": 6,
+                "startedAt": "2026-11-05T14:48:58.970Z",
+                "durationMs": 7,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:51.764Z",
-                    "durationMs": 6,
+                    "startedAt": "2026-11-05T14:48:58.970Z",
+                    "durationMs": 7,
                     "status": "passed",
                     "count": 1
                   }
@@ -2493,19 +2498,19 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:4",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:4",
                 "index": 4,
                 "kind": "locator",
                 "api": "locator.fill",
                 "label": "getByRole(\"textbox\", name: \"New todo\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.770Z",
+                "startedAt": "2026-11-05T14:48:58.977Z",
                 "durationMs": 16,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "fill",
-                    "startedAt": "2026-11-05T14:20:51.770Z",
+                    "startedAt": "2026-11-05T14:48:58.977Z",
                     "durationMs": 16,
                     "status": "passed",
                     "detail": "fill textbox \"New todo\""
@@ -2527,20 +2532,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:5",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:5",
                 "index": 5,
                 "kind": "locator",
                 "api": "locator.tap",
                 "label": "getByRole(\"button\", name: \"Add\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.786Z",
-                "durationMs": 44,
+                "startedAt": "2026-11-05T14:48:58.993Z",
+                "durationMs": 42,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "tap",
-                    "startedAt": "2026-11-05T14:20:51.786Z",
-                    "durationMs": 44,
+                    "startedAt": "2026-11-05T14:48:58.993Z",
+                    "durationMs": 42,
                     "status": "passed",
                     "detail": "tap button \"Add\""
                   }
@@ -2566,19 +2571,19 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:6",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:6",
                 "index": 6,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"checkbox\", name: \"Walk the dog\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.830Z",
+                "startedAt": "2026-11-05T14:48:59.035Z",
                 "durationMs": 4,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:51.831Z",
+                    "startedAt": "2026-11-05T14:48:59.035Z",
                     "durationMs": 4,
                     "status": "passed",
                     "count": 1
@@ -2592,19 +2597,19 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:7",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:7",
                 "index": 7,
                 "kind": "locator",
                 "api": "locator.check",
                 "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.835Z",
+                "startedAt": "2026-11-05T14:48:59.039Z",
                 "durationMs": 46,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "check",
-                    "startedAt": "2026-11-05T14:20:51.835Z",
+                    "startedAt": "2026-11-05T14:48:59.039Z",
                     "durationMs": 46,
                     "status": "passed",
                     "detail": "check checkbox \"Buy milk\""
@@ -2628,37 +2633,37 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:8",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:8",
                 "index": 8,
                 "kind": "agent",
                 "api": "agent.act",
                 "label": "clear the completed todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:51.881Z",
-                "durationMs": 144,
+                "startedAt": "2026-11-05T14:48:59.086Z",
+                "durationMs": 143,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:51.884Z",
+                    "startedAt": "2026-11-05T14:48:59.089Z",
                     "durationMs": 100,
                     "status": "passed",
-                    "bytes": 749,
+                    "bytes": 748,
                     "count": 23
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-05T14:20:51.985Z",
-                    "durationMs": 27,
+                    "startedAt": "2026-11-05T14:48:59.190Z",
+                    "durationMs": 26,
                     "status": "passed",
                     "name": "tap",
                     "detail": "tap button \"Clear completed\""
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:52.012Z",
+                    "startedAt": "2026-11-05T14:48:59.216Z",
                     "durationMs": 12,
                     "status": "passed",
-                    "bytes": 542,
+                    "bytes": 541,
                     "count": 18
                   }
                 ],
@@ -2667,7 +2672,7 @@
                 "metrics": {
                   "modelCalls": 0,
                   "actionSteps": 1,
-                  "observationBytes": 749,
+                  "observationBytes": 748,
                   "contextBytes": 0,
                   "ledgerBytes": 0
                 },
@@ -2699,19 +2704,19 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:9",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:9",
                 "index": 9,
                 "kind": "assertion",
                 "api": "expect.toHaveCount",
                 "label": "getByRole(\"checkbox\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.025Z",
+                "startedAt": "2026-11-05T14:48:59.229Z",
                 "durationMs": 3,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:52.025Z",
+                    "startedAt": "2026-11-05T14:48:59.229Z",
                     "durationMs": 3,
                     "status": "passed",
                     "count": 1
@@ -2725,19 +2730,19 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:10",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:10",
                 "index": 10,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"checkbox\", name: \"Walk the dog\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.028Z",
+                "startedAt": "2026-11-05T14:48:59.232Z",
                 "durationMs": 1,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:52.029Z",
+                    "startedAt": "2026-11-05T14:48:59.233Z",
                     "durationMs": 1,
                     "status": "passed",
                     "count": 1
@@ -2751,20 +2756,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:11",
+                "id": "01a1ac2f-3a46-7de2-9d68-eef63513d47b:11",
                 "index": 11,
                 "kind": "assertion",
                 "api": "expect.toBeHidden",
                 "label": "getByRole(\"button\", name: \"Clear completed\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.030Z",
+                "startedAt": "2026-11-05T14:48:59.234Z",
                 "durationMs": 2,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:52.030Z",
-                    "durationMs": 1,
+                    "startedAt": "2026-11-05T14:48:59.234Z",
+                    "durationMs": 2,
                     "status": "passed",
                     "count": 1
                   }
@@ -2782,7 +2787,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:51.625Z",
+                "at": "2026-11-05T14:48:58.830Z",
                 "step": 0
               }
             ]
@@ -2815,11 +2820,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-7dc5-7bb4-bb5b-74754db05f4b",
+            "id": "01a1ac2f-3c6a-7d43-8a82-42d32bab7bab",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:52.037Z",
-            "durationMs": 257,
+            "startedAt": "2026-11-05T14:48:59.242Z",
+            "durationMs": 225,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -2829,18 +2834,18 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-7dc5-7bb4-bb5b-74754db05f4b:0",
+                "id": "01a1ac2f-3c6a-7d43-8a82-42d32bab7bab:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.084Z",
-                "durationMs": 117,
+                "startedAt": "2026-11-05T14:48:59.290Z",
+                "durationMs": 118,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:52.174Z",
+                    "startedAt": "2026-11-05T14:48:59.382Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
@@ -2860,20 +2865,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7dc5-7bb4-bb5b-74754db05f4b:1",
+                "id": "01a1ac2f-3c6a-7d43-8a82-42d32bab7bab:1",
                 "index": 1,
                 "kind": "locator",
                 "api": "locator.tap",
                 "label": "getByRole(\"button\", name: \"Add\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.201Z",
-                "durationMs": 86,
+                "startedAt": "2026-11-05T14:48:59.408Z",
+                "durationMs": 52,
                 "events": [
                   {
                     "kind": "engine",
                     "name": "tap",
-                    "startedAt": "2026-11-05T14:20:52.201Z",
-                    "durationMs": 86,
+                    "startedAt": "2026-11-05T14:48:59.408Z",
+                    "durationMs": 52,
                     "status": "passed",
                     "detail": "tap button \"Add\""
                   }
@@ -2892,20 +2897,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7dc5-7bb4-bb5b-74754db05f4b:2",
+                "id": "01a1ac2f-3c6a-7d43-8a82-42d32bab7bab:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByText(\"No todos to show.\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.287Z",
-                "durationMs": 4,
+                "startedAt": "2026-11-05T14:48:59.460Z",
+                "durationMs": 3,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:52.287Z",
-                    "durationMs": 4,
+                    "startedAt": "2026-11-05T14:48:59.460Z",
+                    "durationMs": 3,
                     "status": "passed",
                     "count": 1
                   }
@@ -2918,20 +2923,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7dc5-7bb4-bb5b-74754db05f4b:3",
+                "id": "01a1ac2f-3c6a-7d43-8a82-42d32bab7bab:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toHaveText",
                 "label": "getByRole(\"status\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.291Z",
-                "durationMs": 1,
+                "startedAt": "2026-11-05T14:48:59.463Z",
+                "durationMs": 2,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:52.291Z",
-                    "durationMs": 1,
+                    "startedAt": "2026-11-05T14:48:59.463Z",
+                    "durationMs": 2,
                     "status": "passed",
                     "count": 1
                   }
@@ -2949,7 +2954,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:52.166Z",
+                "at": "2026-11-05T14:48:59.374Z",
                 "step": 0
               }
             ]
@@ -2982,11 +2987,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1ac15-7ec6-733e-98ca-41045a6da8b6",
+            "id": "01a1ac2f-3d4b-744f-8607-c6290b6263a9",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-05T14:20:52.294Z",
-            "durationMs": 455,
+            "startedAt": "2026-11-05T14:48:59.467Z",
+            "durationMs": 19431,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -2996,18 +3001,18 @@
             },
             "steps": [
               {
-                "id": "01a1ac15-7ec6-733e-98ca-41045a6da8b6:0",
+                "id": "01a1ac2f-3d4b-744f-8607-c6290b6263a9:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/todos",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.340Z",
-                "durationMs": 119,
+                "startedAt": "2026-11-05T14:48:59.515Z",
+                "durationMs": 117,
                 "events": [
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:52.433Z",
+                    "startedAt": "2026-11-05T14:48:59.605Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/todos"
@@ -3027,57 +3032,131 @@
                 }
               },
               {
-                "id": "01a1ac15-7ec6-733e-98ca-41045a6da8b6:1",
+                "id": "01a1ac2f-3d4b-744f-8607-c6290b6263a9:1",
                 "index": 1,
                 "kind": "agent",
                 "api": "agent.act",
                 "label": "sign out",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.459Z",
-                "durationMs": 278,
+                "startedAt": "2026-11-05T14:48:59.632Z",
+                "durationMs": 19248,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:52.461Z",
-                    "durationMs": 109,
+                    "startedAt": "2026-11-05T14:48:59.634Z",
+                    "durationMs": 107,
                     "status": "passed",
-                    "bytes": 370,
+                    "bytes": 369,
+                    "count": 14
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:48:59.842Z",
+                    "durationMs": 16,
+                    "status": "passed",
+                    "bytes": 369,
+                    "count": 14
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:49:00.159Z",
+                    "durationMs": 18,
+                    "status": "passed",
+                    "bytes": 369,
+                    "count": 14
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:49:00.778Z",
+                    "durationMs": 24,
+                    "status": "passed",
+                    "bytes": 369,
+                    "count": 14
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:49:01.803Z",
+                    "durationMs": 23,
+                    "status": "passed",
+                    "bytes": 369,
+                    "count": 14
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:49:04.827Z",
+                    "durationMs": 23,
+                    "status": "passed",
+                    "bytes": 369,
+                    "count": 14
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:49:07.850Z",
+                    "durationMs": 26,
+                    "status": "passed",
+                    "bytes": 369,
+                    "count": 14
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:49:10.878Z",
+                    "durationMs": 24,
+                    "status": "passed",
+                    "bytes": 369,
+                    "count": 14
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:49:13.903Z",
+                    "durationMs": 22,
+                    "status": "passed",
+                    "bytes": 369,
                     "count": 14
                   },
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:52.602Z",
+                    "startedAt": "2026-11-05T14:49:16.159Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/login"
                   },
                   {
                     "kind": "navigation",
-                    "startedAt": "2026-11-05T14:20:52.603Z",
+                    "startedAt": "2026-11-05T14:49:16.160Z",
                     "durationMs": 0,
                     "status": "passed",
                     "detail": "navigated to http://localhost:3000/login"
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-05T14:20:52.570Z",
-                    "durationMs": 40,
+                    "startedAt": "2026-11-05T14:49:16.120Z",
+                    "durationMs": 47,
                     "status": "passed",
                     "name": "tap",
-                    "detail": "tap button \"Sign out\""
+                    "detail": "tap button \"Log out\""
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:52.610Z",
-                    "durationMs": 16,
+                    "startedAt": "2026-11-05T14:49:16.167Z",
+                    "durationMs": 109,
                     "status": "passed",
-                    "bytes": 37,
-                    "count": 1
+                    "bytes": 372,
+                    "count": 9
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-05T14:49:14.758Z",
+                    "durationMs": 4010,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 36941,
+                    "inputTokens": 36712,
+                    "outputTokens": 229
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-05T14:20:52.727Z",
-                    "durationMs": 11,
+                    "startedAt": "2026-11-05T14:49:18.769Z",
+                    "durationMs": 108,
                     "status": "passed",
                     "bytes": 372,
                     "count": 9
@@ -3086,21 +3165,38 @@
                 "agent": "default",
                 "artifacts": [],
                 "metrics": {
-                  "modelCalls": 0,
+                  "modelCalls": 1,
                   "actionSteps": 1,
                   "observationBytes": 372,
                   "contextBytes": 0,
-                  "ledgerBytes": 0
+                  "ledgerBytes": 28
+                },
+                "model": {
+                  "provider": "@agentclientprotocol/claude-agent-acp",
+                  "model": "sonnet",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "executor/claude-code@1",
+                  "policyVersion": "claude-code/1",
+                  "calls": 1,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 36712,
+                  "outputTokens": 229,
+                  "peakTokensPerCall": 36941,
+                  "cacheReadTokens": 32301,
+                  "cacheWriteTokens": 4405,
+                  "estimatedCostUsd": 0.023152100000000002
                 },
                 "cache": {
-                  "mode": "self-finalized",
-                  "replayedActions": 1,
+                  "mode": "missed",
+                  "reason": "target-not-found",
+                  "replayedActions": 0,
                   "totalActions": 1,
                   "entry": "def2fa64fe1be21d2200354f8ed1eb8879903554180f1458a21cd28ef592dea1",
-                  "write": "kept"
+                  "detail": "at action 1 of 1, tap button \"Sign out\"",
+                  "write": "saved"
                 },
-                "observationRevision": "b4",
-                "explanation": "replayed 1 recorded action(s) zero-turn from the trace cache; recorded verdict: Tapped \"Sign out\" on /todos. The app went to /login and showed the \"Sign in\" heading with Email and <secret:demo.password> fields and a Sign in button.",
+                "observationRevision": "b14",
+                "explanation": "Tapped \"Log out\" on /todos; app navigated to /login showing the \"Sign in\" form, confirming sign-out.",
                 "screen": {
                   "location": "http://localhost:3000/login",
                   "nodes": 9,
@@ -3115,7 +3211,7 @@
                     "added text=\"Demo account: demo@example.test / <secret:demo.password>\"",
                     "removed heading \"Todos\"",
                     "removed text=\"Signed in as Demo User\"",
-                    "removed button \"Sign out\"",
+                    "removed button \"Log out\"",
                     "removed text=\"New todo\"",
                     "removed textbox \"New todo\""
                   ],
@@ -3128,13 +3224,13 @@
                 }
               },
               {
-                "id": "01a1ac15-7ec6-733e-98ca-41045a6da8b6:2",
+                "id": "01a1ac2f-3d4b-744f-8607-c6290b6263a9:2",
                 "index": 2,
                 "kind": "assertion",
                 "api": "expect.toHaveURL",
                 "label": "/login",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.739Z",
+                "startedAt": "2026-11-05T14:49:18.880Z",
                 "durationMs": 0,
                 "events": [],
                 "artifacts": [],
@@ -3145,20 +3241,20 @@
                 }
               },
               {
-                "id": "01a1ac15-7ec6-733e-98ca-41045a6da8b6:3",
+                "id": "01a1ac2f-3d4b-744f-8607-c6290b6263a9:3",
                 "index": 3,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "getByRole(\"heading\", name: \"Sign in\")",
                 "status": "passed",
-                "startedAt": "2026-11-05T14:20:52.739Z",
-                "durationMs": 6,
+                "startedAt": "2026-11-05T14:49:18.881Z",
+                "durationMs": 7,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-05T14:20:52.739Z",
-                    "durationMs": 6,
+                    "startedAt": "2026-11-05T14:49:18.881Z",
+                    "durationMs": 7,
                     "status": "passed",
                     "count": 1
                   }
@@ -3176,7 +3272,7 @@
                 "source": "console",
                 "level": "info",
                 "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
-                "at": "2026-11-05T14:20:52.425Z",
+                "at": "2026-11-05T14:48:59.597Z",
                 "step": 0
               }
             ]
@@ -3205,14 +3301,16 @@
     "usage": {
       "discoveredResults": 11,
       "maxAgentContextBytes": 0,
-      "maxLedgerBytes": 0,
-      "maxObservationBytes": 749,
+      "maxLedgerBytes": 28,
+      "maxObservationBytes": 748,
       "artifactBytes": 0,
       "downloads": 0,
-      "events": 95,
-      "modelTokens": 0,
-      "maxModelCallsInStep": 0,
-      "maxActionStepsInStep": 2
+      "events": 104,
+      "modelTokens": 36941,
+      "maxModelCallsInStep": 1,
+      "maxActionStepsInStep": 2,
+      "modelCachedTokens": 32301,
+      "estimatedCostUsd": 0.023152100000000002
     }
   }
 }

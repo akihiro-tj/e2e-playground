@@ -1,14 +1,14 @@
 {
   "schemaVersion": "trace-1",
-  "createdAt": "2026-11-05T14:20:35.101Z",
+  "createdAt": "2026-11-05T14:49:18.900Z",
   "payload": {
     "actions": [
       {
         "name": "tap",
-        "summary": "tap button \"Sign out\"",
+        "summary": "tap button \"Log out\"",
         "target": {
           "role": "button",
-          "name": "Sign out"
+          "name": "Log out"
         }
       }
     ],
@@ -24,7 +24,7 @@
       "callIndex": 0,
       "agent": "default"
     },
-    "summary": "Tapped \"Sign out\" on /todos. The app went to /login and showed the \"Sign in\" heading with Email and <secret:demo.password> fields and a Sign in button.",
+    "summary": "Tapped \"Log out\" on /todos; app navigated to /login showing the \"Sign in\" form, confirming sign-out.",
     "startPath": "/todos",
     "endPath": "/login",
     "endAnchors": [
@@ -70,7 +70,7 @@
       },
       {
         "role": "button",
-        "name": "Sign out"
+        "name": "Log out"
       },
       {
         "role": "textbox",
@@ -93,7 +93,7 @@
         "name": "Active"
       }
     ],
-    "endWaitMs": 12691,
+    "endWaitMs": 12713,
     "keyedBy": {
       "cacheSchema": "trace-1",
       "policyVersion": "conservative/6",
