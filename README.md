@@ -1,6 +1,6 @@
 # e2e-playground
 
-A small todo app for trying out end-to-end testing tools, built with Vite, React, and TypeScript. There is no backend; all state is stored in the browser's `localStorage`.
+A small todo app for trying out [e2e](https://e2e.com/), built with Vite, React, and TypeScript. There is no backend; all state is stored in the browser's `localStorage`.
 
 ## Getting started
 
