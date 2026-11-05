@@ -1,0 +1,14 @@
+$ vite --port 3000 --strictPort
+
+  VITE v7.3.7  ready in 149 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+[ELIFECYCLE] Command failed with signal SIGTERM.
+$ vite --port 3000 --strictPort
+
+  VITE v7.3.7  ready in 108 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+[ELIFECYCLE] Command failed with signal SIGTERM.

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-05T14:20:14.381Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Active\"",
+        "target": {
+          "role": "button",
+          "name": "Active"
+        }
+      }
+    ],
+    "executor": {
+      "name": "claude-code",
+      "version": "1"
+    },
+    "recordedFor": {
+      "testId": "tests/todos.e2e.ts::todos::filters%20active%20and%20completed%20todos",
+      "targetId": "web",
+      "instructionDigest": "348cd15643a4c0ebbc89d8ecc5d8473fcb88c62a946d9cb70462c9282b3d61e1",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped the \"Active\" filter. It is now pressed, and the completed \"Buy milk\" item is gone from the list. Only the active \"Walk the dog\" item remains.",
+    "startPath": "/todos",
+    "endPath": "/todos",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "All"
+      },
+      {
+        "role": "button",
+        "name": "Active",
+        "states": [
+          "pressed"
+        ]
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "All",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Active"
+      },
+      {
+        "role": "checkbox",
+        "name": "Buy milk",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Buy milk"
+      },
+      {
+        "role": "button",
+        "name": "Delete Buy milk",
+        "text": "Delete"
+      },
+      {
+        "role": "listitem",
+        "name": "Buy milk Delete Buy milk"
+      }
+    ],
+    "endWaitMs": 12268,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "47e041d477d246d445074fd2f244343bbb7cd648f2ed21842309a051156997e4",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e18a7246aa64bc6cabcfc1fff593fa36af4d2bccf2dc172e6d2c8d9ad9cb96af",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

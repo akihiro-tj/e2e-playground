@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-05T14:20:14.382Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Completed\"",
+        "target": {
+          "role": "button",
+          "name": "Completed"
+        }
+      }
+    ],
+    "executor": {
+      "name": "claude-code",
+      "version": "1"
+    },
+    "recordedFor": {
+      "testId": "tests/todos.e2e.ts::todos::filters%20active%20and%20completed%20todos",
+      "targetId": "web",
+      "instructionDigest": "9fc91890872843dbf04fe357270acb4041750192896491df5b7bc4bbc4e8a47b",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped \"Completed\". It is now pressed, and the list shows only the checked \"Buy milk\" item. \"Walk the dog\" is hidden.",
+    "startPath": "/todos",
+    "endPath": "/todos",
+    "endAnchors": [
+      {
+        "role": "button",
+        "name": "Active"
+      },
+      {
+        "role": "button",
+        "name": "Completed",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "checkbox",
+        "name": "Buy milk",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Buy milk"
+      },
+      {
+        "role": "button",
+        "name": "Delete Buy milk",
+        "text": "Delete"
+      },
+      {
+        "role": "listitem",
+        "name": "Buy milk Delete Buy milk"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "button",
+        "name": "Active",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Completed"
+      },
+      {
+        "role": "checkbox",
+        "name": "Walk the dog"
+      },
+      {
+        "text": "Walk the dog"
+      },
+      {
+        "role": "button",
+        "name": "Delete Walk the dog",
+        "text": "Delete"
+      },
+      {
+        "role": "listitem",
+        "name": "Walk the dog Delete Walk the dog"
+      }
+    ],
+    "endWaitMs": 12300,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "47e041d477d246d445074fd2f244343bbb7cd648f2ed21842309a051156997e4",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e18a7246aa64bc6cabcfc1fff593fa36af4d2bccf2dc172e6d2c8d9ad9cb96af",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

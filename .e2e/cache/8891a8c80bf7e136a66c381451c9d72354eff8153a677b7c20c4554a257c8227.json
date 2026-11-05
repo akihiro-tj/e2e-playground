@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-05T14:20:27.930Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Clear completed\"",
+        "target": {
+          "role": "button",
+          "name": "Clear completed"
+        }
+      }
+    ],
+    "executor": {
+      "name": "claude-code",
+      "version": "1"
+    },
+    "recordedFor": {
+      "testId": "tests/todos.e2e.ts::todos::clears%20completed%20todos",
+      "targetId": "web",
+      "instructionDigest": "8ae22fe062de3bd46e9419781603a59023254fa99fec3578a1cc9124749e662e",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped \"Clear completed\". The completed \"Buy milk\" todo is gone and \"Walk the dog\" is still listed. The \"Clear completed\" button is gone too. I didn't re-read the \"1 remaining\" status text after the tap.",
+    "startPath": "/todos",
+    "endPath": "/todos",
+    "goneAnchors": [
+      {
+        "role": "checkbox",
+        "name": "Buy milk",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Buy milk"
+      },
+      {
+        "role": "button",
+        "name": "Delete Buy milk",
+        "text": "Delete"
+      },
+      {
+        "role": "button",
+        "name": "Clear completed"
+      },
+      {
+        "role": "listitem",
+        "name": "Buy milk Delete Buy milk"
+      }
+    ],
+    "endWaitMs": 14364,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "47e041d477d246d445074fd2f244343bbb7cd648f2ed21842309a051156997e4",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e18a7246aa64bc6cabcfc1fff593fa36af4d2bccf2dc172e6d2c8d9ad9cb96af",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-05T14:20:35.101Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Sign out\"",
+        "target": {
+          "role": "button",
+          "name": "Sign out"
+        }
+      }
+    ],
+    "executor": {
+      "name": "claude-code",
+      "version": "1"
+    },
+    "recordedFor": {
+      "testId": "tests/todos.e2e.ts::todos::signs%20out",
+      "targetId": "web",
+      "instructionDigest": "601f295109afa4d049a0aa061764f0010e9dd0270c4de6e5a310e821c24eafed",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped \"Sign out\" on /todos. The app went to /login and showed the \"Sign in\" heading with Email and <secret:demo.password> fields and a Sign in button.",
+    "startPath": "/todos",
+    "endPath": "/login",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Sign in"
+      },
+      {
+        "role": "textbox",
+        "name": "Email",
+        "inputPurpose": "username"
+      },
+      {
+        "role": "textbox",
+        "name": "<secret:demo.password>",
+        "inputPurpose": "password"
+      },
+      {
+        "role": "button",
+        "name": "Sign in"
+      },
+      {
+        "text": "Demo account: demo@example.test / <secret:demo.password>"
+      },
+      {
+        "text": "Email"
+      },
+      {
+        "text": "<secret:demo.password>"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "0 remaining"
+      },
+      {
+        "role": "heading",
+        "name": "Todos"
+      },
+      {
+        "text": "Signed in as Demo User"
+      },
+      {
+        "role": "button",
+        "name": "Sign out"
+      },
+      {
+        "role": "textbox",
+        "name": "New todo",
+        "placeholder": "What needs to be done?"
+      },
+      {
+        "role": "button",
+        "name": "Add"
+      },
+      {
+        "role": "button",
+        "name": "All",
+        "states": [
+          "pressed"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Active"
+      }
+    ],
+    "endWaitMs": 12691,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "47e041d477d246d445074fd2f244343bbb7cd648f2ed21842309a051156997e4",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e18a7246aa64bc6cabcfc1fff593fa36af4d2bccf2dc172e6d2c8d9ad9cb96af",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

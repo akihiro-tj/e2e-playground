@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-05T14:20:05.111Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "check",
+        "summary": "check checkbox \"Buy milk\"",
+        "target": {
+          "role": "checkbox",
+          "name": "Buy milk"
+        },
+        "checked": true
+      }
+    ],
+    "executor": {
+      "name": "claude-code",
+      "version": "1"
+    },
+    "recordedFor": {
+      "testId": "tests/todos.e2e.ts::todos::completes%20a%20todo",
+      "targetId": "web",
+      "instructionDigest": "b918801a72c7f53be83a51b29dbee189f98c6e9571bfc4289c21645936f863ad",
+      "paramsDigest": "6330399f2342cfc9311b85fb26dcac5b706b3080b49e3aadedde2f3a864efdc9",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "I checked the \"Buy milk\" checkbox. It now shows as checked, the status changed from \"1 remaining\" to \"0 remaining\", and a \"Clear completed\" button appeared.",
+    "startPath": "/todos",
+    "endPath": "/todos",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "0 remaining"
+      },
+      {
+        "role": "checkbox",
+        "name": "Buy milk",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "role": "button",
+        "name": "Clear completed"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "1 remaining"
+      },
+      {
+        "role": "checkbox",
+        "name": "Buy milk"
+      }
+    ],
+    "endWaitMs": 12556,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "47e041d477d246d445074fd2f244343bbb7cd648f2ed21842309a051156997e4",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e18a7246aa64bc6cabcfc1fff593fa36af4d2bccf2dc172e6d2c8d9ad9cb96af",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,3218 @@
+{
+  "schemaVersion": "report-1",
+  "run": {
+    "id": "01a1ac15-666b-7b63-a156-148c827e0a29",
+    "specVersion": "0.1",
+    "runner": {
+      "name": "e2e",
+      "version": "0.22.0"
+    },
+    "status": "passed",
+    "exitCode": 0,
+    "startedAt": "2026-11-05T14:20:46.306Z",
+    "finishedAt": "2026-11-05T14:20:52.816Z",
+    "project": {
+      "id": "e2e-playground",
+      "configDigest": "cb7ecfb8285f0390e3fd9a369d29705fe960a96d72f4dd04124210c981833778"
+    },
+    "environment": {
+      "ci": false,
+      "trustNoticeShown": false,
+      "os": "darwin 25.6.0",
+      "arch": "arm64",
+      "runtime": "node v24.22.1"
+    },
+    "vcs": {
+      "commit": "57b933e1d0b303d729c102ba61183d5504c5d62e",
+      "branch": "main",
+      "dirty": false
+    },
+    "targets": [
+      {
+        "id": "web",
+        "index": 0,
+        "platform": "web",
+        "baseOrigin": "http://localhost:3000",
+        "environment": "test",
+        "engine": {
+          "name": "web",
+          "version": "0.15.4",
+          "spiVersion": 1
+        },
+        "capabilities": [
+          "actions",
+          "artifacts",
+          "browser",
+          "keyboard",
+          "location",
+          "observation",
+          "pointer",
+          "state"
+        ],
+        "artifactCapabilities": [
+          "screenshot",
+          "video"
+        ],
+        "stateCapability": true
+      }
+    ],
+    "serialGroups": [],
+    "results": [
+      {
+        "id": "cf1faae5e8c5383f0ac9f26de88c8f43f2cb04a9bcf0a44b873f4a225a1a6d31",
+        "testId": "setup::tests/auth.setup.e2e.ts::sign%20in%20as%20the%20demo%20user",
+        "kind": "setup",
+        "declarationIndex": 0,
+        "titlePath": [
+          "sign in as the demo user"
+        ],
+        "file": "tests/auth.setup.e2e.ts",
+        "source": {
+          "file": "tests/auth.setup.e2e.ts",
+          "line": 4,
+          "column": 6
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:46.913Z",
+            "durationMs": 391,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/login",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:46.998Z",
+                "durationMs": 145,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:47.119Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/login"
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/login",
+                  "nodes": 9,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/auth.setup.e2e.ts",
+                  "line": 6,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByRole(\"textbox\", name: \"Email\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.145Z",
+                "durationMs": 64,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-05T14:20:47.145Z",
+                    "durationMs": 64,
+                    "status": "passed",
+                    "detail": "fill textbox \"Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/login",
+                  "nodes": 9,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"Email\" value=\"demo@example.test\" purpose=username (was: textbox \"Email\" purpose=username)"
+                  ]
+                },
+                "source": {
+                  "file": "tests/auth.setup.e2e.ts",
+                  "line": 7,
+                  "column": 46
+                }
+              },
+              {
+                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByLabel(\"<secret:demo.password>\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.209Z",
+                "durationMs": 29,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-05T14:20:47.210Z",
+                    "durationMs": 28,
+                    "status": "passed",
+                    "detail": "fill textbox \"<secret:demo.password>\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/login",
+                  "nodes": 9,
+                  "since": 1,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/auth.setup.e2e.ts",
+                  "line": 8,
+                  "column": 39
+                }
+              },
+              {
+                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByRole(\"button\", name: \"Sign in\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.238Z",
+                "durationMs": 46,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:47.273Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:47.276Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:47.276Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  },
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-05T14:20:47.238Z",
+                    "durationMs": 46,
+                    "status": "passed",
+                    "detail": "tap button \"Sign in\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 1,
+                  "since": 2,
+                  "changes": [
+                    "removed main",
+                    "removed heading \"Sign in\"",
+                    "removed text=\"Email\"",
+                    "removed textbox \"Email\" value=\"demo@example.test\" purpose=username",
+                    "removed text=\"<secret:demo.password>\"",
+                    "removed textbox \"<secret:demo.password>\" value=<secure> purpose=password [secure]",
+                    "removed button \"Sign in\"",
+                    "removed text=\"Demo account: demo@example.test / <secret:demo.password>\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/auth.setup.e2e.ts",
+                  "line": 9,
+                  "column": 47
+                }
+              },
+              {
+                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:4",
+                "index": 4,
+                "kind": "assertion",
+                "api": "expect.toHaveURL",
+                "label": "/todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.285Z",
+                "durationMs": 1,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/auth.setup.e2e.ts",
+                  "line": 10,
+                  "column": 25
+                }
+              },
+              {
+                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:5",
+                "index": 5,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(\"Signed in as Demo User\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.286Z",
+                "durationMs": 4,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:47.286Z",
+                    "durationMs": 4,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/auth.setup.e2e.ts",
+                  "line": 11,
+                  "column": 60
+                }
+              },
+              {
+                "id": "01a1ac15-69c1-79f3-a38a-d8a89122465d:6",
+                "index": 6,
+                "kind": "session",
+                "api": "session.save",
+                "label": "demo",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.290Z",
+                "durationMs": 4,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/auth.setup.e2e.ts",
+                  "line": 12,
+                  "column": 17
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:47.107Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b7d57535871b62b9504b92cbd13f832eec398a229df1a67dcdf78e376aca9549",
+        "testId": "tests/example.e2e.ts::app%20opens",
+        "kind": "test",
+        "declarationIndex": 0,
+        "titlePath": [
+          "app opens"
+        ],
+        "file": "tests/example.e2e.ts",
+        "source": {
+          "file": "tests/example.e2e.ts",
+          "line": 4,
+          "column": 1
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-6d45-7576-a2e6-571a4dc4e761",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:47.813Z",
+            "durationMs": 295,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-6d45-7576-a2e6-571a4dc4e761:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.906Z",
+                "durationMs": 172,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:48.053Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/"
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:48.055Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/login"
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:48.056Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/login"
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/login",
+                  "nodes": 9,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/example.e2e.ts",
+                  "line": 5,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1ac15-6d45-7576-a2e6-571a4dc4e761:1",
+                "index": 1,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "locator(\"body\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.080Z",
+                "durationMs": 22,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:48.080Z",
+                    "durationMs": 22,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/example.e2e.ts",
+                  "line": 6,
+                  "column": 41
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:48.037Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b32c39205348f00fdf1bccc7887ca5b5a2cf42b90201b803dff0763044240242",
+        "testId": "tests/login.e2e.ts::sign-in::rejects%20a%20wrong%20%3Csecret%3Ademo.password%3E",
+        "kind": "test",
+        "declarationIndex": 0,
+        "titlePath": [
+          "sign-in",
+          "rejects a wrong <secret:demo.password>"
+        ],
+        "file": "tests/login.e2e.ts",
+        "source": {
+          "file": "tests/login.e2e.ts",
+          "line": 5,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "auth"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-6d41-7548-8d85-c56ca861549f",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:47.810Z",
+            "durationMs": 420,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/login",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.905Z",
+                "durationMs": 176,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:48.058Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/login"
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/login",
+                  "nodes": 9,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/login.e2e.ts",
+                  "line": 6,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByRole(\"textbox\", name: \"Email\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.083Z",
+                "durationMs": 68,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-05T14:20:48.083Z",
+                    "durationMs": 68,
+                    "status": "passed",
+                    "detail": "fill textbox \"Email\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/login",
+                  "nodes": 9,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"Email\" value=\"demo@example.test\" purpose=username (was: textbox \"Email\" purpose=username)"
+                  ]
+                },
+                "source": {
+                  "file": "tests/login.e2e.ts",
+                  "line": 7,
+                  "column": 48
+                }
+              },
+              {
+                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByLabel(\"<secret:demo.password>\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.151Z",
+                "durationMs": 32,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-05T14:20:48.151Z",
+                    "durationMs": 32,
+                    "status": "passed",
+                    "detail": "fill textbox \"<secret:demo.password>\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/login",
+                  "nodes": 9,
+                  "since": 1,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/login.e2e.ts",
+                  "line": 8,
+                  "column": 41
+                }
+              },
+              {
+                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:3",
+                "index": 3,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByRole(\"button\", name: \"Sign in\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.183Z",
+                "durationMs": 35,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-05T14:20:48.183Z",
+                    "durationMs": 35,
+                    "status": "passed",
+                    "detail": "tap button \"Sign in\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/login",
+                  "nodes": 10,
+                  "since": 2,
+                  "changes": [
+                    "added alert \"Invalid email or <secret:demo.password>.\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/login.e2e.ts",
+                  "line": 9,
+                  "column": 49
+                }
+              },
+              {
+                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:4",
+                "index": 4,
+                "kind": "assertion",
+                "api": "expect.toContainText",
+                "label": "getByRole(\"alert\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.218Z",
+                "durationMs": 4,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:48.218Z",
+                    "durationMs": 4,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/login.e2e.ts",
+                  "line": 12,
+                  "column": 45
+                }
+              },
+              {
+                "id": "01a1ac15-6d41-7548-8d85-c56ca861549f:5",
+                "index": 5,
+                "kind": "assertion",
+                "api": "expect.toHaveURL",
+                "label": "/login",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.222Z",
+                "durationMs": 0,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/login.e2e.ts",
+                  "line": 13,
+                  "column": 27
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:48.042Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "294a3858f203d0bb42eed909196384d5b4bfa57e15f599d6be5105d48a7e136a",
+        "testId": "tests/login.e2e.ts::sign-in::redirects%20a%20signed-out%20visitor%20to%20the%20sign-in%20page",
+        "kind": "test",
+        "declarationIndex": 1,
+        "titlePath": [
+          "sign-in",
+          "redirects a signed-out visitor to the sign-in page"
+        ],
+        "file": "tests/login.e2e.ts",
+        "source": {
+          "file": "tests/login.e2e.ts",
+          "line": 16,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "auth"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-6ee7-7660-9ef3-7a5ff6e34037",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:48.231Z",
+            "durationMs": 149,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-6ee7-7660-9ef3-7a5ff6e34037:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.235Z",
+                "durationMs": 123,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:48.329Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:48.336Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/login"
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:48.337Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/login"
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/login",
+                  "nodes": 9,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/login.e2e.ts",
+                  "line": 17,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ac15-6ee7-7660-9ef3-7a5ff6e34037:1",
+                "index": 1,
+                "kind": "assertion",
+                "api": "expect.toHaveURL",
+                "label": "/login",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.358Z",
+                "durationMs": 0,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/login.e2e.ts",
+                  "line": 18,
+                  "column": 27
+                }
+              },
+              {
+                "id": "01a1ac15-6ee7-7660-9ef3-7a5ff6e34037:2",
+                "index": 2,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"heading\", name: \"Sign in\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.359Z",
+                "durationMs": 19,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:48.359Z",
+                    "durationMs": 19,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/login.e2e.ts",
+                  "line": 19,
+                  "column": 58
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:48.320Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a5c5bbcdcaf8b408e7049bf604a3628f87c8ddd02658ff7ed0124ef82c67a181",
+        "testId": "tests/todos.e2e.ts::todos::adds%20a%20todo",
+        "kind": "test",
+        "declarationIndex": 1,
+        "titlePath": [
+          "todos",
+          "adds a todo"
+        ],
+        "file": "tests/todos.e2e.ts",
+        "source": {
+          "file": "tests/todos.e2e.ts",
+          "line": 16,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "todos"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-6b4e-7940-9459-3019508be066",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:47.310Z",
+            "durationMs": 1473,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-6b4e-7940-9459-3019508be066:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.364Z",
+                "durationMs": 136,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:47.473Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  }
+                ],
+                "phase": "beforeEach",
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 13,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ac15-6b4e-7940-9459-3019508be066:1",
+                "index": 1,
+                "kind": "agent",
+                "api": "agent.act",
+                "label": "add a todo named {title}",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.501Z",
+                "durationMs": 209,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:47.506Z",
+                    "durationMs": 107,
+                    "status": "passed",
+                    "bytes": 370,
+                    "count": 14
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-05T14:20:47.614Z",
+                    "durationMs": 37,
+                    "status": "passed",
+                    "name": "type",
+                    "detail": "type \"Buy milk\" into textbox \"New todo\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:47.652Z",
+                    "durationMs": 13,
+                    "status": "passed",
+                    "bytes": 397,
+                    "count": 14
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-05T14:20:47.665Z",
+                    "durationMs": 30,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap button \"Add\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:47.695Z",
+                    "durationMs": 14,
+                    "status": "passed",
+                    "bytes": 533,
+                    "count": 18
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [],
+                "metrics": {
+                  "modelCalls": 0,
+                  "actionSteps": 2,
+                  "observationBytes": 533,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "cache": {
+                  "mode": "self-finalized",
+                  "replayedActions": 2,
+                  "totalActions": 2,
+                  "entry": "5d004fa71213abc267fb55ed63e9f492d817b786ec33f680e15bf506dd4972f4",
+                  "write": "kept"
+                },
+                "observationRevision": "b4",
+                "explanation": "replayed 2 recorded action(s) zero-turn from the trace cache; recorded verdict: Typed \"Buy milk\" and tapped Add. The list now shows a \"Buy milk\" item with a checkbox and a Delete button. The status reads \"1 remaining\", the input is cleared, and the \"No todos to show.\" message is gone.",
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 18,
+                  "since": 0,
+                  "changes": [
+                    "added list \"Todo list\"",
+                    "added listitem \"Buy milk Delete Buy milk\"",
+                    "added checkbox \"Buy milk\"",
+                    "added text=\"Buy milk\"",
+                    "added button \"Delete Buy milk\" text=\"Delete\"",
+                    "changed status \"1 remaining\" (was: status \"0 remaining\")",
+                    "removed text=\"No todos to show.\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 17,
+                  "column": 17
+                }
+              },
+              {
+                "id": "01a1ac15-6b4e-7940-9459-3019508be066:2",
+                "index": 2,
+                "kind": "assertion",
+                "api": "expect.not.toBeChecked",
+                "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:47.711Z",
+                "durationMs": 1052,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:47.711Z",
+                    "durationMs": 1052,
+                    "status": "passed",
+                    "count": 11
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 18,
+                  "column": 64
+                }
+              },
+              {
+                "id": "01a1ac15-6b4e-7940-9459-3019508be066:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toHaveCount",
+                "label": "getByRole(\"listitem\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.763Z",
+                "durationMs": 4,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:48.764Z",
+                    "durationMs": 4,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 19,
+                  "column": 48
+                }
+              },
+              {
+                "id": "01a1ac15-6b4e-7940-9459-3019508be066:4",
+                "index": 4,
+                "kind": "assertion",
+                "api": "expect.toHaveText",
+                "label": "getByRole(\"status\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.768Z",
+                "durationMs": 5,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:48.769Z",
+                    "durationMs": 4,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 20,
+                  "column": 46
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:47.461Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "077bbec11cd9823f880acb3ada16a63985c7849d1afb9d6bbf7efcd7ba3ec1ae",
+        "testId": "tests/todos.e2e.ts::todos::completes%20a%20todo",
+        "kind": "test",
+        "declarationIndex": 2,
+        "titlePath": [
+          "todos",
+          "completes a todo"
+        ],
+        "file": "tests/todos.e2e.ts",
+        "source": {
+          "file": "tests/todos.e2e.ts",
+          "line": 23,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "todos"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:48.785Z",
+            "durationMs": 461,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.848Z",
+                "durationMs": 122,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:48.942Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  }
+                ],
+                "phase": "beforeEach",
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 13,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByRole(\"textbox\", name: \"New todo\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:48.971Z",
+                "durationMs": 54,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-05T14:20:48.971Z",
+                    "durationMs": 54,
+                    "status": "passed",
+                    "detail": "fill textbox \"New todo\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"New todo\" value=\"Buy milk\" (was: textbox \"New todo\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 6,
+                  "column": 49
+                }
+              },
+              {
+                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByRole(\"button\", name: \"Add\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.025Z",
+                "durationMs": 49,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-05T14:20:49.025Z",
+                    "durationMs": 49,
+                    "status": "passed",
+                    "detail": "tap button \"Add\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 18,
+                  "since": 1,
+                  "changes": [
+                    "changed textbox \"New todo\" (was: textbox \"New todo\" value=\"Buy milk\")",
+                    "added list \"Todo list\"",
+                    "added listitem \"Buy milk Delete Buy milk\"",
+                    "added checkbox \"Buy milk\"",
+                    "added text=\"Buy milk\"",
+                    "added button \"Delete Buy milk\" text=\"Delete\"",
+                    "changed status \"1 remaining\" (was: status \"0 remaining\")",
+                    "removed text=\"No todos to show.\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 7,
+                  "column": 43
+                }
+              },
+              {
+                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.074Z",
+                "durationMs": 5,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:49.074Z",
+                    "durationMs": 5,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 8,
+                  "column": 53
+                }
+              },
+              {
+                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:4",
+                "index": 4,
+                "kind": "agent",
+                "api": "agent.act",
+                "label": "mark the todo {title} as done",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.079Z",
+                "durationMs": 154,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:49.080Z",
+                    "durationMs": 100,
+                    "status": "passed",
+                    "bytes": 528,
+                    "count": 18
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-05T14:20:49.181Z",
+                    "durationMs": 39,
+                    "status": "passed",
+                    "name": "check",
+                    "detail": "check checkbox \"Buy milk\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:49.220Z",
+                    "durationMs": 12,
+                    "status": "passed",
+                    "bytes": 571,
+                    "count": 19
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [],
+                "metrics": {
+                  "modelCalls": 0,
+                  "actionSteps": 1,
+                  "observationBytes": 571,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "cache": {
+                  "mode": "self-finalized",
+                  "replayedActions": 1,
+                  "totalActions": 1,
+                  "entry": "15f95567e56c1a36868c403dab5c3ec7a7fd3c31852cda1e7e7fc89d27781173",
+                  "write": "kept"
+                },
+                "observationRevision": "b3",
+                "explanation": "replayed 1 recorded action(s) zero-turn from the trace cache; recorded verdict: I checked the \"Buy milk\" checkbox. It now shows as checked, the status changed from \"1 remaining\" to \"0 remaining\", and a \"Clear completed\" button appeared.",
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 19,
+                  "since": 2,
+                  "changes": [
+                    "changed checkbox \"Buy milk\" [checked] (was: checkbox \"Buy milk\")",
+                    "changed status \"0 remaining\" (was: status \"1 remaining\")",
+                    "added button \"Clear completed\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 26,
+                  "column": 17
+                }
+              },
+              {
+                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:5",
+                "index": 5,
+                "kind": "assertion",
+                "api": "expect.toBeChecked",
+                "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.233Z",
+                "durationMs": 4,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:49.233Z",
+                    "durationMs": 4,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 27,
+                  "column": 60
+                }
+              },
+              {
+                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:6",
+                "index": 6,
+                "kind": "assertion",
+                "api": "expect.toHaveText",
+                "label": "getByRole(\"status\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.237Z",
+                "durationMs": 2,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:49.237Z",
+                    "durationMs": 2,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 28,
+                  "column": 46
+                }
+              },
+              {
+                "id": "01a1ac15-7111-78e9-bb60-3b55a722ea6a:7",
+                "index": 7,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"button\", name: \"Clear completed\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.239Z",
+                "durationMs": 2,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:49.239Z",
+                    "durationMs": 2,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 29,
+                  "column": 65
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:48.933Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b21fefc3d1b4dddace32319ed2529e77d12a2a31b63aa2978aa435095fd7fe55",
+        "testId": "tests/todos.e2e.ts::todos::filters%20active%20and%20completed%20todos",
+        "kind": "test",
+        "declarationIndex": 3,
+        "titlePath": [
+          "todos",
+          "filters active and completed todos"
+        ],
+        "file": "tests/todos.e2e.ts",
+        "source": {
+          "file": "tests/todos.e2e.ts",
+          "line": 32,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "todos"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-72df-7dda-adc4-ad1794f06869",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:49.247Z",
+            "durationMs": 1808,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.296Z",
+                "durationMs": 120,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:49.390Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  }
+                ],
+                "phase": "beforeEach",
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 13,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByRole(\"textbox\", name: \"New todo\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.416Z",
+                "durationMs": 53,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-05T14:20:49.416Z",
+                    "durationMs": 53,
+                    "status": "passed",
+                    "detail": "fill textbox \"New todo\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"New todo\" value=\"Buy milk\" (was: textbox \"New todo\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 6,
+                  "column": 49
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByRole(\"button\", name: \"Add\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.469Z",
+                "durationMs": 51,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-05T14:20:49.469Z",
+                    "durationMs": 51,
+                    "status": "passed",
+                    "detail": "tap button \"Add\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 18,
+                  "since": 1,
+                  "changes": [
+                    "changed textbox \"New todo\" (was: textbox \"New todo\" value=\"Buy milk\")",
+                    "added list \"Todo list\"",
+                    "added listitem \"Buy milk Delete Buy milk\"",
+                    "added checkbox \"Buy milk\"",
+                    "added text=\"Buy milk\"",
+                    "added button \"Delete Buy milk\" text=\"Delete\"",
+                    "changed status \"1 remaining\" (was: status \"0 remaining\")",
+                    "removed text=\"No todos to show.\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 7,
+                  "column": 43
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.520Z",
+                "durationMs": 6,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:49.520Z",
+                    "durationMs": 6,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 8,
+                  "column": 53
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:4",
+                "index": 4,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByRole(\"textbox\", name: \"New todo\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.526Z",
+                "durationMs": 16,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-05T14:20:49.527Z",
+                    "durationMs": 16,
+                    "status": "passed",
+                    "detail": "fill textbox \"New todo\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 18,
+                  "since": 2,
+                  "changes": [
+                    "changed textbox \"New todo\" value=\"Walk the dog\" (was: textbox \"New todo\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 6,
+                  "column": 49
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByRole(\"button\", name: \"Add\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.543Z",
+                "durationMs": 42,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-05T14:20:49.543Z",
+                    "durationMs": 42,
+                    "status": "passed",
+                    "detail": "tap button \"Add\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 22,
+                  "since": 4,
+                  "changes": [
+                    "changed textbox \"New todo\" (was: textbox \"New todo\" value=\"Walk the dog\")",
+                    "added listitem \"Walk the dog Delete Walk the dog\"",
+                    "added checkbox \"Walk the dog\"",
+                    "added text=\"Walk the dog\"",
+                    "added button \"Delete Walk the dog\" text=\"Delete\"",
+                    "changed status \"2 remaining\" (was: status \"1 remaining\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 7,
+                  "column": 43
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:6",
+                "index": 6,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"checkbox\", name: \"Walk the dog\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.585Z",
+                "durationMs": 5,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:49.585Z",
+                    "durationMs": 5,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 8,
+                  "column": 53
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:7",
+                "index": 7,
+                "kind": "locator",
+                "api": "locator.check",
+                "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.590Z",
+                "durationMs": 47,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "check",
+                    "startedAt": "2026-11-05T14:20:49.590Z",
+                    "durationMs": 47,
+                    "status": "passed",
+                    "detail": "check checkbox \"Buy milk\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 23,
+                  "since": 5,
+                  "changes": [
+                    "changed checkbox \"Buy milk\" [checked] (was: checkbox \"Buy milk\")",
+                    "changed status \"1 remaining\" (was: status \"2 remaining\")",
+                    "added button \"Clear completed\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 35,
+                  "column": 52
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:8",
+                "index": 8,
+                "kind": "agent",
+                "api": "agent.act",
+                "label": "show only the active todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.637Z",
+                "durationMs": 144,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:49.641Z",
+                    "durationMs": 101,
+                    "status": "passed",
+                    "bytes": 749,
+                    "count": 23
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-05T14:20:49.742Z",
+                    "durationMs": 25,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap button \"Active\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:49.767Z",
+                    "durationMs": 13,
+                    "status": "passed",
+                    "bytes": 585,
+                    "count": 19
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [],
+                "metrics": {
+                  "modelCalls": 0,
+                  "actionSteps": 1,
+                  "observationBytes": 749,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "cache": {
+                  "mode": "self-finalized",
+                  "replayedActions": 1,
+                  "totalActions": 1,
+                  "entry": "a38acfb07132b0390149dc141569bd1e2ea277fda3bb59a292845125d95896b6",
+                  "write": "kept"
+                },
+                "observationRevision": "b3",
+                "explanation": "replayed 1 recorded action(s) zero-turn from the trace cache; recorded verdict: Tapped the \"Active\" filter. It is now pressed, and the completed \"Buy milk\" item is gone from the list. Only the active \"Walk the dog\" item remains.",
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 19,
+                  "since": 7,
+                  "changes": [
+                    "changed button \"All\" (was: button \"All\" [pressed])",
+                    "changed button \"Active\" [pressed] (was: button \"Active\")",
+                    "removed listitem \"Buy milk Delete Buy milk\"",
+                    "removed checkbox \"Buy milk\" [checked]",
+                    "removed text=\"Buy milk\"",
+                    "removed button \"Delete Buy milk\" text=\"Delete\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 37,
+                  "column": 17
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:9",
+                "index": 9,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"button\", name: \"Active\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.781Z",
+                "durationMs": 4,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:49.781Z",
+                    "durationMs": 4,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 38,
+                  "column": 75
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:10",
+                "index": 10,
+                "kind": "assertion",
+                "api": "expect.toHaveCount",
+                "label": "getByRole(\"checkbox\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.785Z",
+                "durationMs": 1,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:49.785Z",
+                    "durationMs": 1,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 39,
+                  "column": 48
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:11",
+                "index": 11,
+                "kind": "assertion",
+                "api": "expect.not.toBeChecked",
+                "label": "getByRole(\"checkbox\", name: \"Walk the dog\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:49.787Z",
+                "durationMs": 1070,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:49.787Z",
+                    "durationMs": 1070,
+                    "status": "passed",
+                    "count": 11
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 40,
+                  "column": 68
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:12",
+                "index": 12,
+                "kind": "agent",
+                "api": "agent.act",
+                "label": "show only the completed todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:50.857Z",
+                "durationMs": 182,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:50.860Z",
+                    "durationMs": 123,
+                    "status": "passed",
+                    "bytes": 585,
+                    "count": 19
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-05T14:20:50.984Z",
+                    "durationMs": 41,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap button \"Completed\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:51.025Z",
+                    "durationMs": 15,
+                    "status": "passed",
+                    "bytes": 575,
+                    "count": 19
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [],
+                "metrics": {
+                  "modelCalls": 0,
+                  "actionSteps": 1,
+                  "observationBytes": 585,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "cache": {
+                  "mode": "self-finalized",
+                  "replayedActions": 1,
+                  "totalActions": 1,
+                  "entry": "bb8140df44b1081a9caa3f47ee2f0625beda448f22db8d7b779d068b98a68d31",
+                  "write": "kept"
+                },
+                "observationRevision": "b6",
+                "explanation": "replayed 1 recorded action(s) zero-turn from the trace cache; recorded verdict: Tapped \"Completed\". It is now pressed, and the list shows only the checked \"Buy milk\" item. \"Walk the dog\" is hidden.",
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 19,
+                  "since": 8,
+                  "changes": [
+                    "changed button \"Active\" (was: button \"Active\" [pressed])",
+                    "changed button \"Completed\" [pressed] (was: button \"Completed\")",
+                    "added listitem \"Buy milk Delete Buy milk\"",
+                    "added checkbox \"Buy milk\" [checked]",
+                    "added text=\"Buy milk\"",
+                    "added button \"Delete Buy milk\" text=\"Delete\"",
+                    "removed listitem \"Walk the dog Delete Walk the dog\"",
+                    "removed checkbox \"Walk the dog\"",
+                    "removed text=\"Walk the dog\"",
+                    "removed button \"Delete Walk the dog\" text=\"Delete\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 42,
+                  "column": 17
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:13",
+                "index": 13,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"button\", name: \"Completed\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.041Z",
+                "durationMs": 6,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:51.041Z",
+                    "durationMs": 6,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 43,
+                  "column": 78
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:14",
+                "index": 14,
+                "kind": "assertion",
+                "api": "expect.toHaveCount",
+                "label": "getByRole(\"checkbox\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.047Z",
+                "durationMs": 1,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:51.047Z",
+                    "durationMs": 1,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 44,
+                  "column": 48
+                }
+              },
+              {
+                "id": "01a1ac15-72df-7dda-adc4-ad1794f06869:15",
+                "index": 15,
+                "kind": "assertion",
+                "api": "expect.toBeChecked",
+                "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.048Z",
+                "durationMs": 2,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:51.048Z",
+                    "durationMs": 2,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 45,
+                  "column": 60
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:49.381Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "153d2e70910204b28c2ee598bbb4ef724b0acc01a19ac3a381b53e5279a86fbc",
+        "testId": "tests/todos.e2e.ts::todos::deletes%20a%20todo",
+        "kind": "test",
+        "declarationIndex": 4,
+        "titlePath": [
+          "todos",
+          "deletes a todo"
+        ],
+        "file": "tests/todos.e2e.ts",
+        "source": {
+          "file": "tests/todos.e2e.ts",
+          "line": 48,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "todos"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-79f0-7768-911e-bd197267ad4a",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:51.056Z",
+            "durationMs": 423,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.104Z",
+                "durationMs": 118,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:51.197Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  }
+                ],
+                "phase": "beforeEach",
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 13,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByRole(\"textbox\", name: \"New todo\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.223Z",
+                "durationMs": 51,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-05T14:20:51.223Z",
+                    "durationMs": 51,
+                    "status": "passed",
+                    "detail": "fill textbox \"New todo\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"New todo\" value=\"Buy milk\" (was: textbox \"New todo\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 6,
+                  "column": 49
+                }
+              },
+              {
+                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByRole(\"button\", name: \"Add\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.274Z",
+                "durationMs": 54,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-05T14:20:51.275Z",
+                    "durationMs": 54,
+                    "status": "passed",
+                    "detail": "tap button \"Add\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 18,
+                  "since": 1,
+                  "changes": [
+                    "changed textbox \"New todo\" (was: textbox \"New todo\" value=\"Buy milk\")",
+                    "added list \"Todo list\"",
+                    "added listitem \"Buy milk Delete Buy milk\"",
+                    "added checkbox \"Buy milk\"",
+                    "added text=\"Buy milk\"",
+                    "added button \"Delete Buy milk\" text=\"Delete\"",
+                    "changed status \"1 remaining\" (was: status \"0 remaining\")",
+                    "removed text=\"No todos to show.\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 7,
+                  "column": 43
+                }
+              },
+              {
+                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.329Z",
+                "durationMs": 8,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:51.329Z",
+                    "durationMs": 8,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 8,
+                  "column": 53
+                }
+              },
+              {
+                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:4",
+                "index": 4,
+                "kind": "agent",
+                "api": "agent.act",
+                "label": "delete the todo {title}",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.337Z",
+                "durationMs": 132,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:51.338Z",
+                    "durationMs": 97,
+                    "status": "passed",
+                    "bytes": 528,
+                    "count": 18
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-05T14:20:51.436Z",
+                    "durationMs": 21,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap button \"Delete Buy milk\" in \"Buy milk\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:51.457Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "bytes": 373,
+                    "count": 14
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [],
+                "metrics": {
+                  "modelCalls": 0,
+                  "actionSteps": 1,
+                  "observationBytes": 528,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "cache": {
+                  "mode": "self-finalized",
+                  "replayedActions": 1,
+                  "totalActions": 1,
+                  "entry": "42f5ab4b0d189f88ef5794409ea49c927197713b46f8450c763ebe097d854570",
+                  "write": "kept"
+                },
+                "observationRevision": "b3",
+                "explanation": "replayed 1 recorded action(s) zero-turn from the trace cache; recorded verdict: Tapped Delete on \"Buy milk\". The todo list and item are gone, the screen shows \"No todos to show.\" and the status reads \"0 remaining\".",
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "since": 2,
+                  "changes": [
+                    "added text=\"No todos to show.\"",
+                    "changed status \"0 remaining\" (was: status \"1 remaining\")",
+                    "removed list \"Todo list\"",
+                    "removed listitem \"Buy milk Delete Buy milk\"",
+                    "removed checkbox \"Buy milk\"",
+                    "removed text=\"Buy milk\"",
+                    "removed button \"Delete Buy milk\" text=\"Delete\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 51,
+                  "column": 17
+                }
+              },
+              {
+                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:5",
+                "index": 5,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(\"No todos to show.\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.469Z",
+                "durationMs": 4,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:51.469Z",
+                    "durationMs": 4,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 52,
+                  "column": 57
+                }
+              },
+              {
+                "id": "01a1ac15-79f0-7768-911e-bd197267ad4a:6",
+                "index": 6,
+                "kind": "assertion",
+                "api": "expect.toHaveText",
+                "label": "getByRole(\"status\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.473Z",
+                "durationMs": 1,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:51.473Z",
+                    "durationMs": 1,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 53,
+                  "column": 46
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:51.189Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "d80f03ac283c43e851041fe64dce41a9bb06e466b47872ad632f0edc3fee4f7e",
+        "testId": "tests/todos.e2e.ts::todos::clears%20completed%20todos",
+        "kind": "test",
+        "declarationIndex": 5,
+        "titlePath": [
+          "todos",
+          "clears completed todos"
+        ],
+        "file": "tests/todos.e2e.ts",
+        "source": {
+          "file": "tests/todos.e2e.ts",
+          "line": 56,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "todos"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-7b98-710d-a177-943e8885d6fe",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:51.480Z",
+            "durationMs": 557,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.541Z",
+                "durationMs": 118,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:51.633Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  }
+                ],
+                "phase": "beforeEach",
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 13,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByRole(\"textbox\", name: \"New todo\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.660Z",
+                "durationMs": 50,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-05T14:20:51.661Z",
+                    "durationMs": 50,
+                    "status": "passed",
+                    "detail": "fill textbox \"New todo\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "since": 0,
+                  "changes": [
+                    "changed textbox \"New todo\" value=\"Buy milk\" (was: textbox \"New todo\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 6,
+                  "column": 49
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:2",
+                "index": 2,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByRole(\"button\", name: \"Add\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.711Z",
+                "durationMs": 53,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-05T14:20:51.711Z",
+                    "durationMs": 53,
+                    "status": "passed",
+                    "detail": "tap button \"Add\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 18,
+                  "since": 1,
+                  "changes": [
+                    "changed textbox \"New todo\" (was: textbox \"New todo\" value=\"Buy milk\")",
+                    "added list \"Todo list\"",
+                    "added listitem \"Buy milk Delete Buy milk\"",
+                    "added checkbox \"Buy milk\"",
+                    "added text=\"Buy milk\"",
+                    "added button \"Delete Buy milk\" text=\"Delete\"",
+                    "changed status \"1 remaining\" (was: status \"0 remaining\")",
+                    "removed text=\"No todos to show.\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 7,
+                  "column": 43
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.764Z",
+                "durationMs": 6,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:51.764Z",
+                    "durationMs": 6,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 8,
+                  "column": 53
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:4",
+                "index": 4,
+                "kind": "locator",
+                "api": "locator.fill",
+                "label": "getByRole(\"textbox\", name: \"New todo\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.770Z",
+                "durationMs": 16,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "fill",
+                    "startedAt": "2026-11-05T14:20:51.770Z",
+                    "durationMs": 16,
+                    "status": "passed",
+                    "detail": "fill textbox \"New todo\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 18,
+                  "since": 2,
+                  "changes": [
+                    "changed textbox \"New todo\" value=\"Walk the dog\" (was: textbox \"New todo\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 6,
+                  "column": 49
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:5",
+                "index": 5,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByRole(\"button\", name: \"Add\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.786Z",
+                "durationMs": 44,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-05T14:20:51.786Z",
+                    "durationMs": 44,
+                    "status": "passed",
+                    "detail": "tap button \"Add\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 22,
+                  "since": 4,
+                  "changes": [
+                    "changed textbox \"New todo\" (was: textbox \"New todo\" value=\"Walk the dog\")",
+                    "added listitem \"Walk the dog Delete Walk the dog\"",
+                    "added checkbox \"Walk the dog\"",
+                    "added text=\"Walk the dog\"",
+                    "added button \"Delete Walk the dog\" text=\"Delete\"",
+                    "changed status \"2 remaining\" (was: status \"1 remaining\")"
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 7,
+                  "column": 43
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:6",
+                "index": 6,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"checkbox\", name: \"Walk the dog\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.830Z",
+                "durationMs": 4,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:51.831Z",
+                    "durationMs": 4,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 8,
+                  "column": 53
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:7",
+                "index": 7,
+                "kind": "locator",
+                "api": "locator.check",
+                "label": "getByRole(\"checkbox\", name: \"Buy milk\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.835Z",
+                "durationMs": 46,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "check",
+                    "startedAt": "2026-11-05T14:20:51.835Z",
+                    "durationMs": 46,
+                    "status": "passed",
+                    "detail": "check checkbox \"Buy milk\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 23,
+                  "since": 5,
+                  "changes": [
+                    "changed checkbox \"Buy milk\" [checked] (was: checkbox \"Buy milk\")",
+                    "changed status \"1 remaining\" (was: status \"2 remaining\")",
+                    "added button \"Clear completed\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 59,
+                  "column": 52
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:8",
+                "index": 8,
+                "kind": "agent",
+                "api": "agent.act",
+                "label": "clear the completed todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:51.881Z",
+                "durationMs": 144,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:51.884Z",
+                    "durationMs": 100,
+                    "status": "passed",
+                    "bytes": 749,
+                    "count": 23
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-05T14:20:51.985Z",
+                    "durationMs": 27,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap button \"Clear completed\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:52.012Z",
+                    "durationMs": 12,
+                    "status": "passed",
+                    "bytes": 542,
+                    "count": 18
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [],
+                "metrics": {
+                  "modelCalls": 0,
+                  "actionSteps": 1,
+                  "observationBytes": 749,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "cache": {
+                  "mode": "self-finalized",
+                  "replayedActions": 1,
+                  "totalActions": 1,
+                  "entry": "8891a8c80bf7e136a66c381451c9d72354eff8153a677b7c20c4554a257c8227",
+                  "write": "kept"
+                },
+                "observationRevision": "b3",
+                "explanation": "replayed 1 recorded action(s) zero-turn from the trace cache; recorded verdict: Tapped \"Clear completed\". The completed \"Buy milk\" todo is gone and \"Walk the dog\" is still listed. The \"Clear completed\" button is gone too. I didn't re-read the \"1 remaining\" status text after the tap.",
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 18,
+                  "since": 7,
+                  "changes": [
+                    "removed listitem \"Buy milk Delete Buy milk\"",
+                    "removed checkbox \"Buy milk\" [checked]",
+                    "removed text=\"Buy milk\"",
+                    "removed button \"Delete Buy milk\" text=\"Delete\"",
+                    "removed button \"Clear completed\""
+                  ]
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 61,
+                  "column": 17
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:9",
+                "index": 9,
+                "kind": "assertion",
+                "api": "expect.toHaveCount",
+                "label": "getByRole(\"checkbox\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.025Z",
+                "durationMs": 3,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:52.025Z",
+                    "durationMs": 3,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 62,
+                  "column": 48
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:10",
+                "index": 10,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"checkbox\", name: \"Walk the dog\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.028Z",
+                "durationMs": 1,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:52.029Z",
+                    "durationMs": 1,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 63,
+                  "column": 64
+                }
+              },
+              {
+                "id": "01a1ac15-7b98-710d-a177-943e8885d6fe:11",
+                "index": 11,
+                "kind": "assertion",
+                "api": "expect.toBeHidden",
+                "label": "getByRole(\"button\", name: \"Clear completed\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.030Z",
+                "durationMs": 2,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:52.030Z",
+                    "durationMs": 1,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 64,
+                  "column": 65
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:51.625Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1320bec363c450d54aef307fd73bf080266f6b00addc83b3d399c886f8cd5daa",
+        "testId": "tests/todos.e2e.ts::todos::ignores%20an%20empty%20submission",
+        "kind": "test",
+        "declarationIndex": 6,
+        "titlePath": [
+          "todos",
+          "ignores an empty submission"
+        ],
+        "file": "tests/todos.e2e.ts",
+        "source": {
+          "file": "tests/todos.e2e.ts",
+          "line": 67,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "todos"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-7dc5-7bb4-bb5b-74754db05f4b",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:52.037Z",
+            "durationMs": 257,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-7dc5-7bb4-bb5b-74754db05f4b:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.084Z",
+                "durationMs": 117,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:52.174Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  }
+                ],
+                "phase": "beforeEach",
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 13,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ac15-7dc5-7bb4-bb5b-74754db05f4b:1",
+                "index": 1,
+                "kind": "locator",
+                "api": "locator.tap",
+                "label": "getByRole(\"button\", name: \"Add\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.201Z",
+                "durationMs": 86,
+                "events": [
+                  {
+                    "kind": "engine",
+                    "name": "tap",
+                    "startedAt": "2026-11-05T14:20:52.201Z",
+                    "durationMs": 86,
+                    "status": "passed",
+                    "detail": "tap button \"Add\""
+                  }
+                ],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "since": 0,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 69,
+                  "column": 45
+                }
+              },
+              {
+                "id": "01a1ac15-7dc5-7bb4-bb5b-74754db05f4b:2",
+                "index": 2,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByText(\"No todos to show.\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.287Z",
+                "durationMs": 4,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:52.287Z",
+                    "durationMs": 4,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 70,
+                  "column": 57
+                }
+              },
+              {
+                "id": "01a1ac15-7dc5-7bb4-bb5b-74754db05f4b:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toHaveText",
+                "label": "getByRole(\"status\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.291Z",
+                "durationMs": 1,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:52.291Z",
+                    "durationMs": 1,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 71,
+                  "column": 46
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:52.166Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "c4d1039e98337d222e26f677809db17df03040652b2d31c87ba6123d69a12e15",
+        "testId": "tests/todos.e2e.ts::todos::signs%20out",
+        "kind": "test",
+        "declarationIndex": 7,
+        "titlePath": [
+          "todos",
+          "signs out"
+        ],
+        "file": "tests/todos.e2e.ts",
+        "source": {
+          "file": "tests/todos.e2e.ts",
+          "line": 74,
+          "column": 3
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [
+          "todos"
+        ],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1ac15-7ec6-733e-98ca-41045a6da8b6",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-05T14:20:52.294Z",
+            "durationMs": 455,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1ac15-7ec6-733e-98ca-41045a6da8b6:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/todos",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.340Z",
+                "durationMs": 119,
+                "events": [
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:52.433Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/todos"
+                  }
+                ],
+                "phase": "beforeEach",
+                "artifacts": [],
+                "screen": {
+                  "location": "http://localhost:3000/todos",
+                  "nodes": 14,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 13,
+                  "column": 15
+                }
+              },
+              {
+                "id": "01a1ac15-7ec6-733e-98ca-41045a6da8b6:1",
+                "index": 1,
+                "kind": "agent",
+                "api": "agent.act",
+                "label": "sign out",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.459Z",
+                "durationMs": 278,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:52.461Z",
+                    "durationMs": 109,
+                    "status": "passed",
+                    "bytes": 370,
+                    "count": 14
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:52.602Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/login"
+                  },
+                  {
+                    "kind": "navigation",
+                    "startedAt": "2026-11-05T14:20:52.603Z",
+                    "durationMs": 0,
+                    "status": "passed",
+                    "detail": "navigated to http://localhost:3000/login"
+                  },
+                  {
+                    "kind": "engine",
+                    "startedAt": "2026-11-05T14:20:52.570Z",
+                    "durationMs": 40,
+                    "status": "passed",
+                    "name": "tap",
+                    "detail": "tap button \"Sign out\""
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:52.610Z",
+                    "durationMs": 16,
+                    "status": "passed",
+                    "bytes": 37,
+                    "count": 1
+                  },
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-05T14:20:52.727Z",
+                    "durationMs": 11,
+                    "status": "passed",
+                    "bytes": 372,
+                    "count": 9
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [],
+                "metrics": {
+                  "modelCalls": 0,
+                  "actionSteps": 1,
+                  "observationBytes": 372,
+                  "contextBytes": 0,
+                  "ledgerBytes": 0
+                },
+                "cache": {
+                  "mode": "self-finalized",
+                  "replayedActions": 1,
+                  "totalActions": 1,
+                  "entry": "def2fa64fe1be21d2200354f8ed1eb8879903554180f1458a21cd28ef592dea1",
+                  "write": "kept"
+                },
+                "observationRevision": "b4",
+                "explanation": "replayed 1 recorded action(s) zero-turn from the trace cache; recorded verdict: Tapped \"Sign out\" on /todos. The app went to /login and showed the \"Sign in\" heading with Email and <secret:demo.password> fields and a Sign in button.",
+                "screen": {
+                  "location": "http://localhost:3000/login",
+                  "nodes": 9,
+                  "since": 0,
+                  "changes": [
+                    "added heading \"Sign in\"",
+                    "added text=\"Email\"",
+                    "added textbox \"Email\" purpose=username",
+                    "added text=\"<secret:demo.password>\"",
+                    "added textbox \"<secret:demo.password>\" value=<secure> purpose=password [secure]",
+                    "added button \"Sign in\"",
+                    "added text=\"Demo account: demo@example.test / <secret:demo.password>\"",
+                    "removed heading \"Todos\"",
+                    "removed text=\"Signed in as Demo User\"",
+                    "removed button \"Sign out\"",
+                    "removed text=\"New todo\"",
+                    "removed textbox \"New todo\""
+                  ],
+                  "more": 7
+                },
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 75,
+                  "column": 17
+                }
+              },
+              {
+                "id": "01a1ac15-7ec6-733e-98ca-41045a6da8b6:2",
+                "index": 2,
+                "kind": "assertion",
+                "api": "expect.toHaveURL",
+                "label": "/login",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.739Z",
+                "durationMs": 0,
+                "events": [],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 76,
+                  "column": 27
+                }
+              },
+              {
+                "id": "01a1ac15-7ec6-733e-98ca-41045a6da8b6:3",
+                "index": 3,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "getByRole(\"heading\", name: \"Sign in\")",
+                "status": "passed",
+                "startedAt": "2026-11-05T14:20:52.739Z",
+                "durationMs": 6,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-05T14:20:52.739Z",
+                    "durationMs": 6,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/todos.e2e.ts",
+                  "line": 77,
+                  "column": 58
+                }
+              }
+            ],
+            "appLog": [
+              {
+                "source": "console",
+                "level": "info",
+                "text": "%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold (at http://localhost:3000/node_modules/.vite/deps/react-dom_client.js?v=ddfa6542:22163)",
+                "at": "2026-11-05T14:20:52.425Z",
+                "step": 0
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "summary": {
+      "discovered": 11,
+      "selected": 11,
+      "executed": 11,
+      "passed": 11,
+      "failed": 0,
+      "interrupted": 0,
+      "flaky": 0,
+      "skipped": 0
+    },
+    "limits": {
+      "maxAgentContextBytes": 16384,
+      "maxLedgerBytes": 8192,
+      "maxObservationBytes": 262144,
+      "maxEventsPerStep": 1000,
+      "maxModelTokensPerCall": 64000
+    },
+    "usage": {
+      "discoveredResults": 11,
+      "maxAgentContextBytes": 0,
+      "maxLedgerBytes": 0,
+      "maxObservationBytes": 749,
+      "artifactBytes": 0,
+      "downloads": 0,
+      "events": 95,
+      "modelTokens": 0,
+      "maxModelCallsInStep": 0,
+      "maxActionStepsInStep": 2
+    }
+  }
+}

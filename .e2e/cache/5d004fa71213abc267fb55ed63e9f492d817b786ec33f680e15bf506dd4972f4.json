@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-05T14:20:00.000Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"Buy milk\" into textbox \"New todo\"",
+        "target": {
+          "role": "textbox",
+          "name": "New todo",
+          "placeholder": "What needs to be done?"
+        },
+        "value": "Buy milk"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Add\"",
+        "target": {
+          "role": "button",
+          "name": "Add"
+        }
+      }
+    ],
+    "executor": {
+      "name": "claude-code",
+      "version": "1"
+    },
+    "recordedFor": {
+      "testId": "tests/todos.e2e.ts::todos::adds%20a%20todo",
+      "targetId": "web",
+      "instructionDigest": "5dfd1e599f1ca6b7f76c554160308a91cbf2583ec94f2edcfab732520ffde3ee",
+      "paramsDigest": "6330399f2342cfc9311b85fb26dcac5b706b3080b49e3aadedde2f3a864efdc9",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Typed \"Buy milk\" and tapped Add. The list now shows a \"Buy milk\" item with a checkbox and a Delete button. The status reads \"1 remaining\", the input is cleared, and the \"No todos to show.\" message is gone.",
+    "startPath": "/todos",
+    "endPath": "/todos",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "1 remaining"
+      },
+      {
+        "role": "checkbox",
+        "name": "Buy milk"
+      },
+      {
+        "text": "Buy milk"
+      },
+      {
+        "role": "button",
+        "name": "Delete Buy milk",
+        "text": "Delete"
+      },
+      {
+        "role": "list",
+        "name": "Todo list"
+      },
+      {
+        "role": "listitem",
+        "name": "Buy milk Delete Buy milk"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "0 remaining"
+      },
+      {
+        "text": "No todos to show."
+      }
+    ],
+    "endWaitMs": 15483,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "47e041d477d246d445074fd2f244343bbb7cd648f2ed21842309a051156997e4",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e18a7246aa64bc6cabcfc1fff593fa36af4d2bccf2dc172e6d2c8d9ad9cb96af",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

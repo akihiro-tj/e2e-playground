@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-05T14:20:18.930Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Delete Buy milk\" in \"Buy milk\"",
+        "target": {
+          "role": "button",
+          "name": "Delete Buy milk",
+          "text": "Delete",
+          "within": "Buy milk"
+        }
+      }
+    ],
+    "executor": {
+      "name": "claude-code",
+      "version": "1"
+    },
+    "recordedFor": {
+      "testId": "tests/todos.e2e.ts::todos::deletes%20a%20todo",
+      "targetId": "web",
+      "instructionDigest": "437569ea2a840820181fb3ac61c27156d7036c407da56aad743488ae87f2a4eb",
+      "paramsDigest": "6330399f2342cfc9311b85fb26dcac5b706b3080b49e3aadedde2f3a864efdc9",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Delete on \"Buy milk\". The todo list and item are gone, the screen shows \"No todos to show.\" and the status reads \"0 remaining\".",
+    "startPath": "/todos",
+    "endPath": "/todos",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "0 remaining"
+      },
+      {
+        "text": "No todos to show."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "1 remaining"
+      },
+      {
+        "role": "checkbox",
+        "name": "Buy milk"
+      },
+      {
+        "text": "Buy milk"
+      },
+      {
+        "role": "button",
+        "name": "Delete Buy milk",
+        "text": "Delete"
+      },
+      {
+        "role": "list",
+        "name": "Todo list"
+      },
+      {
+        "role": "listitem",
+        "name": "Buy milk Delete Buy milk"
+      }
+    ],
+    "endWaitMs": 12220,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "47e041d477d246d445074fd2f244343bbb7cd648f2ed21842309a051156997e4",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "e18a7246aa64bc6cabcfc1fff593fa36af4d2bccf2dc172e6d2c8d9ad9cb96af",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}
